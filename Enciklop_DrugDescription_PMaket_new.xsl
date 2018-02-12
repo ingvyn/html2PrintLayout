@@ -776,90 +776,73 @@ v0.4.3 - John's minor tweaks anf bugfixes: start para, ignored para, etc. some i
     <xsl:text>&#xA;</xsl:text>
   </xsl:template>
 
-  <!-- ==================================================================== -->
-  <!-- Links -->
-  <!-- ==================================================================== -->
-  <!-- Исходный код tkbr2icml-v043.xsl, изменный код идет следом
-    <xsl:template match="a" mode="character-style-range">
-    <xsl:variable name="hyperlink-key" select="count(preceding::a) + 1"/>
-    <xsl:variable name="self" select="concat('htss-', $hyperlink-key)"/>
-    <xsl:variable name="name" select="."/>
-    <CharacterStyleRange>
-      <xsl:text>&#xA;</xsl:text>
-      <xsl:attribute name="AppliedCharacterStyle">CharacterStyle/link</xsl:attribute>
-      <HyperlinkTextSource Self="{$self}" Name="{$name}" Hidden="false">
-        <xsl:text>&#xA;</xsl:text>
-        <Content>
-          <xsl:value-of select="."/>
-        </Content>
-        <xsl:text>&#xA;</xsl:text>
-      </HyperlinkTextSource>
-      <xsl:text>&#xA;</xsl:text>
-    </CharacterStyleRange>
-    <xsl:text>&#xA;</xsl:text>
-  </xsl:template>
--->  
-  <!-- TODO: Add support for internal hyperlinks -->
-  <!-- Исходный код tkbr2icml-v043.xsl, изменный код идет следом
-  <xsl:template match="a[not(@href)]" mode="hyperlinks"/>
-  <xsl:template match="a[not(@href)]" mode="hyperlink-url-destinations"/>
 
-  <xsl:template match="a[@href]" mode="hyperlink-url-destinations">
-    <xsl:variable name="hyperlink-key" select="count(preceding::a) + 1"/>
-    <xsl:variable name="hyperlink-text-source-self" select="concat('htss-', $hyperlink-key)"/>
-    <xsl:variable name="hyperlink-url-destination-self" select="concat('huds-', $hyperlink-key)"/>
-    <xsl:variable name="hyperlink-text-source-name" select="."/>
-    <xsl:variable name="destination-unique-key" select="$hyperlink-key"/>
-    <HyperlinkURLDestination Self="{$hyperlink-url-destination-self}"
-      Name="{$hyperlink-text-source-name}" DestinationURL="{@href}"
-      DestinationUniqueKey="{$destination-unique-key}"/>
-    <xsl:text>&#xA;</xsl:text>
-  </xsl:template>
-
-  <xsl:template match="a[@href]" mode="hyperlinks">
-    <xsl:variable name="hyperlink-key" select="count(preceding::a) + 1"/>
-    <xsl:variable name="hyperlink-self" select="concat('hs-', $hyperlink-key)"/>
-    <xsl:variable name="hyperlink-url-destination-self" select="concat('huds-', $hyperlink-key)"/>
-    <xsl:variable name="hyperlink-text-source-self" select="concat('htss-', $hyperlink-key)"/>
-    <xsl:variable name="hyperlink-text-source-name" select="."/>
-    <xsl:variable name="destination-unique-key" select="$hyperlink-key"/>
-    <Hyperlink Self="{$hyperlink-self}" Name="{$hyperlink-text-source-name}"
-      Source="{$hyperlink-text-source-self}" Visible="true"
-      DestinationUniqueKey="{$destination-unique-key}">
-      <xsl:text>&#xA;</xsl:text>
-      <Properties>
-        <xsl:text>&#xA;</xsl:text>
-        <BorderColor type="enumeration">Black</BorderColor>
-        <xsl:text>&#xA;</xsl:text>
-        <Destination type="object">
-          <xsl:value-of select="$hyperlink-url-destination-self"/>
-        </Destination>
-        <xsl:text>&#xA;</xsl:text>
-      </Properties>
-      <xsl:text>&#xA;</xsl:text>
-    </Hyperlink>
-    <xsl:text>&#xA;</xsl:text>
-  </xsl:template>
--->
 
   <!-- ==================================================================== -->
   <!-- Links -->
   <!-- ==================================================================== -->
   <xsl:template match="a[@href]" mode="character-style-range">
+    <xsl:param name="inherited-font-style" select="'Regular'"/>
+    <xsl:param name="inherited-position" select="'Normal'"/>
+    <xsl:param name="inherited-character-style" select="'[No character style]'"/>    
     <xsl:variable name="crossref-IDREF">
       <xsl:value-of select="concat('u', @href)"/>
     </xsl:variable>
     <xsl:variable name="crossref-nameREF">
       <xsl:value-of select="concat('hyper', @href)"/>
     </xsl:variable>
-      <CrossReferenceSource Self="{$crossref-IDREF}" AppliedFormat="u91" Name="{$crossref-nameREF}" Hidden="false" AppliedCharacterStyle="n">
-        <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-          <Content>	</Content> <!-- табуляция -->
-        </CharacterStyleRange>
-        <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PageNumberType="TextVariable">
+    <xsl:choose>
+      <xsl:when test="not(preceding-sibling::a or preceding-sibling::*/a)">
+        <CharacterStyleRange>
+          <xsl:attribute name="AppliedCharacterStyle">
+            <xsl:value-of select="'[No Character style]'"/>
+          </xsl:attribute>
+          <xsl:attribute name="FontStyle">
+            <xsl:value-of select="'Regular'"/>
+          </xsl:attribute>
+          <xsl:attribute name="Position">
+            <xsl:value-of select="'Normal'"/>
+          </xsl:attribute>        
+          <Content><xsl:text>&#x09;</xsl:text></Content> <!-- табуляция -->
+        </CharacterStyleRange>        
+      </xsl:when>
+    </xsl:choose>
+    <CrossReferenceSource Self="{$crossref-IDREF}" AppliedFormat="u91" Name="{$crossref-nameREF}" Hidden="false" AppliedCharacterStyle="n">
+        <CharacterStyleRange PageNumberType="TextVariable">
+          <xsl:attribute name="AppliedCharacterStyle">
+            <xsl:value-of select="concat('CharacterStyle/', $inherited-character-style)"/>
+          </xsl:attribute>
+          <xsl:choose>
+            <!-- у текста со тилем Regular значение аттрибута FontStyle опускается для того, чтобы те стили абзаца,
+         которые имеют стиль написания, отличный от заданного в html, работали-->
+            <xsl:when test="$inherited-font-style != 'Regular'">
+              <xsl:attribute name="FontStyle">
+                <xsl:value-of select="$inherited-font-style"/>
+              </xsl:attribute>
+            </xsl:when>
+          </xsl:choose>
+          <xsl:attribute name="Position">
+            <xsl:value-of select="$inherited-position"/>
+          </xsl:attribute>        
           <TextVariableInstance Self="u29b44" Name="&lt;?AID 001b?&gt;TV XRefPageNumber" ResultText="1" AssociatedTextVariable="dTextVariablen&lt;?AID 001b?&gt;TV XRefPageNumber" />
         </CharacterStyleRange>
-      </CrossReferenceSource>
+     </CrossReferenceSource>
+    <xsl:choose>
+      <xsl:when test="following-sibling::a or following-sibling::*/a">
+        <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+          <xsl:attribute name="AppliedCharacterStyle">
+            <xsl:value-of select="'[No Character style]'"/>
+          </xsl:attribute>
+          <xsl:attribute name="FontStyle">
+            <xsl:value-of select="'Regular'"/>
+          </xsl:attribute>
+          <xsl:attribute name="Position">
+            <xsl:value-of select="'Normal'"/>
+          </xsl:attribute>           
+          <Content><xsl:text>&#x2C;&#x20;</xsl:text></Content> <!-- запятая пробел -->
+        </CharacterStyleRange>        
+      </xsl:when>
+    </xsl:choose>    
       <xsl:text>&#xA;</xsl:text>
   </xsl:template>
   
