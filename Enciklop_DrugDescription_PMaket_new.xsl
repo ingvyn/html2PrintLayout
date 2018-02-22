@@ -4,30 +4,6 @@
 Преобразование tkbr2icml-v043.xsl
 v. 0.4, Dec 2009
 
-This script is copyright 2009 by John W. Maxwell, Meghan MacDonald, 
-and Travis Nicholson at Simon Fraser University's Master of Publishing
-program.
-
-Our intent is that this script be free licensed; you are hereby free to
-use, study, modify, share, and redistribute this software as needed. 
-This script would be GNU GPL-licensed, except that small parts of it come 
-directly from Adobe's excellent IDML Cookbook and SDK and so aren't ours
-to license. That said, the point of the thing is educational, so go to it.
-See also http://www.adobe.com/devnet/indesign/
-
-This script is not meant to be comprehensive or perfect. It was written
-and tested in the context of the CCSP's Book Publishing 1 title, and content
-from out ZWiki-based webCM system. To make it work with your content, you
-will probably need to make modifications. That said, it is a working 
-proof-of-concept and a foundation for further work. - JMax June 5, 2009.
-
-CHANGES
-===========
-v0.2 - JMax: Nov 2009. Tweaks to make this work with TinyMCE's content rather than the HTML that ZWiki's ReStructured Text creates.
-v0.2.5 - Meghan: Dec 2009. Added handlers for crude p-level metadata
-v0.3 - JMax: merged 0.2 and 0.25, tweaked support for "a" links
-v0.4 - Keith Fahlgren: Refactored XSLT for clarity, organization, and extensibility; added support for hyperlinks
-v0.4.3 - John's minor tweaks anf bugfixes: start para, ignored para, etc. some image-handling hacks
 -->
 <xsl:stylesheet xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="xhtml" version="1.0">
@@ -543,6 +519,9 @@ v0.4.3 - John's minor tweaks anf bugfixes: start para, ignored para, etc. some i
         </xsl:variable>
         <xsl:variable name="colcount_inmaxcol_row"
           select="count(descendant::tr[position() = $maxcol_row]/td)"/>
+        <xsl:variable name="header-row-count">
+          <xsl:call-template name="Table_HeaderRowCount"/> <!-- подсчет числа строк в заголовке таблицы: берется максимальный среди всех ячеек первой строки атрибут rowspan -->          
+        </xsl:variable>
         <!--конец блока, осуществляющего подсчет максимального количества столбцов -->
         <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/table">
           <xsl:text>&#xA;</xsl:text>
@@ -552,8 +531,11 @@ v0.4.3 - John's minor tweaks anf bugfixes: start para, ignored para, etc. some i
               <xsl:attribute name="AppliedTableStyle">
                 <xsl:value-of select="'TableStyle/TableMono_1ThinLine'"/>
               </xsl:attribute>
+              <xsl:attribute name="HeaderRowCount">
+                <xsl:value-of select="$header-row-count"/>
+              </xsl:attribute>
               <xsl:attribute name="BodyRowCount">
-                <xsl:value-of select="count(descendant::tr)"/>
+                <xsl:value-of select="count(descendant::tr) - $header-row-count"/>
               </xsl:attribute>
               <xsl:attribute name="ColumnCount">
                 <xsl:value-of select="$colcount_inmaxcol_row"/>
@@ -1433,6 +1415,42 @@ v0.4.3 - John's minor tweaks anf bugfixes: start para, ignored para, etc. some i
     </CharacterStyle>
   </xsl:template>
 
+  <xsl:template name="Table_HeaderRowCount">
+    <xsl:param name="header-rowNum" select="1"/> <!--  параметр, в котором на протяжении рекурсивного вызова шаблона откладывается макисмальный среди всех ячеек первой строки атрибут ячейки rowspan-->
+    <xsl:param name="col_num" select="1"/> <!-- текущий номер столбца -->
+    <xsl:variable name="currRowSpan"> <!-- переменная с rowspan текущей ячейки перволй строки-->
+      <xsl:choose>
+        <xsl:when test="descendant::tr[1]/td[$col_num]/@rowspan">
+          <xsl:value-of select="descendant::tr[1]/td[$col_num]/@rowspan"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="1"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="$col_num = count(descendant::tr[1]/td) + 1"> <!-- почему-то сложилась такая запись: обычная проверка счетчика столбцов на превышение их числа -->
+        <xsl:value-of select="$header-rowNum"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:choose>
+          <xsl:when test="$header-rowNum &lt; $currRowSpan">
+            <xsl:call-template name="Table_HeaderRowCount">
+              <xsl:with-param name="header-rowNum" select="$currRowSpan"/>
+              <xsl:with-param name="col_num" select="$col_num + 1"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="Table_HeaderRowCount">
+              <xsl:with-param name="header-rowNum" select="$header-rowNum"/>
+              <xsl:with-param name="col_num" select="$col_num + 1"/>
+            </xsl:call-template>            
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
   <!-- шаблон с рекурсивным вызовом самого себя для подсчета максимального количества столбцов в таблице-->
   <xsl:template name="Table_calc_columns">
     <xsl:param name="column_max" select="1"/>
