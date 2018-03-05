@@ -51,6 +51,7 @@ v. 0.4, Dec 2009
       <xsl:text>&#xA;</xsl:text>
       <RootParagraphStyleGroup Self="xhtml2icml_paragraph_styles">
         <xsl:text>&#xA;</xsl:text>
+        <ParagraphStyle Self="ParagraphStyle/COLONT_Opis" Name="COLONT_Opis"/>
         <ParagraphStyle Self="ParagraphStyle/OPIS_END" Name="OPIS_END"/>
         <ParagraphStyle Self="ParagraphStyle/table" Name="table"/>
         <ParagraphStyle Self="ParagraphStyle/IDENT" Name="IDENT"/>
@@ -1313,6 +1314,18 @@ v. 0.4, Dec 2009
     <xsl:text>&#xA;</xsl:text>
     <Br/>
     <xsl:text>&#xA;</xsl:text>
+    <xsl:if test="$style-name='OPIS_LARGETON' or $style-name='Opis_DV_Opis'">
+      <ParagraphStyleRange>
+        <xsl:attribute name="AppliedParagraphStyle">
+          <xsl:value-of select="'ParagraphStyle/COLONT_Opis'"/>
+        </xsl:attribute>
+        <xsl:text>&#xA;</xsl:text>
+        <xsl:apply-templates select="text() | *" mode="character-style-range"/>        
+      </ParagraphStyleRange>
+      <xsl:text>&#xA;</xsl:text>      
+      <Br/>
+      <xsl:text>&#xA;</xsl:text>      
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="para-style-range-in-table">
