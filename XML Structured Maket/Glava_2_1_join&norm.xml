@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<Root xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
+<Story>
+<Glava aid:pstyle="Glava">Глава 2</Glava>
+<GlTitle aid:pstyle="GlTitle">Фармакологический указатель</GlTitle>
+<INTRO_TEXT aid:pstyle="INTRO_TEXT">Указатель предназначен для поиска торговых названий препаратов, относящихся к определенной фармакологической группе.</INTRO_TEXT>
+<INTRO_TEXT aid:pstyle="INTRO_TEXT">Для облегчения поиска Фармакологический указатель снабжен Перечнем основных фармакологических групп со ссылками на страницу, с которой начинается первый уровень классификации (раздел 2.1). Найти группу и подгруппу можно и с помощью Классификации фармакологических групп (раздел 2.2), и с помощью Алфавитного перечня фармакологических групп и подгрупп (раздел 2.3), которые содержат ссылку на соответствующий номер страницы Фармакологического указателя. В Алфавитный перечень фармакологических групп и подгрупп включены также названия групп, отличающиеся от принятых в системе справочников <CStyleBold aid:cstyle="CStyleBold">РЛС</CStyleBold><CStyleBoldSuperscript aid:cstyle="CStyleBoldSuperscript">®</CStyleBoldSuperscript>, но встречающиеся в инструкциях по применению лекарственных средств, утвержденных МЗ РФ. Такие названия имеют отсылку на группу или подгруппу в Указателе лекарственных средств и действующих веществ по фармакологическим группам (раздел 2.4).</INTRO_TEXT>
+<INTRO_TEXT aid:pstyle="INTRO_TEXT">Любая группа или подгруппа Указателя лекарственных средств и действующих веществ по фармакологическим группам (раздел 2.4) содержит алфавитный перечень названий действующих веществ или их комбинаций (выделены <CStyleItalicBold aid:cstyle="CStyleItalicBold">полужирным курсивом</CStyleItalicBold>), каждое из которых объединяет торговые названия препаратов, также размещенные в алфавитном порядке. При перечислении действующих веществ в комбинации, подчеркиванием выделено то действующее вещество, которое определяет принадлежность комбинации к конкретной фармакологической группе. Названия действующих веществ имеют ссылки на номер страницы с информацией о них<CStyleItalic aid:cstyle="CStyleItalic"> (курсив)</CStyleItalic>. Для каждого торгового названия препарата указан его производитель <CStyleItalic aid:cstyle="CStyleItalic">(курсив) </CStyleItalic>и номер страницы (<CStyleBold aid:cstyle="CStyleBold">полужирным</CStyleBold> шрифтом выделена страница с полным описанием препарата в Главе 1, обычным — со сжатым).</INTRO_TEXT>
+<INTRO_TEXT aid:pstyle="INTRO_TEXT">После перечня названий действующих веществ под рубрикой Другие препараты приведены алфавитные списки препаратов сложного состава.</INTRO_TEXT>
+<GlSubTitle aid:pstyle="GlSubTitle">2.1. Перечень основных фармакологических групп</GlSubTitle>
+<MainFG aid:pstyle="MainFG">Вегетотропные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Гематотропные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Гомеопатические средства</MainFG>
+<MainFG aid:pstyle="MainFG">Гормоны и их антагонисты</MainFG>
+<MainFG aid:pstyle="MainFG">Диагностические средства</MainFG>
+<MainFG aid:pstyle="MainFG">Иммунотропные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Интермедианты</MainFG>
+<MainFG aid:pstyle="MainFG">Метаболики</MainFG>
+<MainFG aid:pstyle="MainFG">Нейротропные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Органотропные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Противомикробные, противопаразитарные и противоглистные средства</MainFG>
+<MainFG aid:pstyle="MainFG">Противоопухолевые средства</MainFG>
+<MainFG aid:pstyle="MainFG">Регенеранты и репаранты</MainFG>
+<MainFG aid:pstyle="MainFG">Биологически активные добавки к пище (БАДы)</MainFG>
+<MainFG aid:pstyle="MainFG">Разные средства</MainFG>
+<GlSubTitle aid:pstyle="GlSubTitle">2.2. Классификация фармакологических групп</GlSubTitle>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">1. Вегетотропные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">1.1. Адренолитические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.1.1. Альфа-адреноблокаторы</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">1.1.1.1. Альфа-адреноблокаторы в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.1.2. Бета-адреноблокаторы</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">1.1.2.1. Бета-адреноблокаторы в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">1.2. Адреномиметические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.2.1. Альфа-адреномиметики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">1.2.1.1. Альфа-адреномиметики в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.2.2. Бета-адреномиметики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">1.2.2.1. Бета-адреномиметики в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">1.3. Холинолитические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.3.1. м-Холинолитики</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.3.2. н-Холинолитики (миорелаксанты)</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">1.3.2.1. н-Холинолитики (миорелаксанты) в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.3.3. м-, н-Холинолитики</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">1.4. Холиномиметические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.4.1. м-, н-Холиномиметики, в т.ч. антихолинэстеразные средства</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.4.2. м-Холиномиметики</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">1.4.3. н-Холиномиметики</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">2. Гематотропные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">2.1. Антиагреганты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">2.1.1. Антиагреганты в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">2.2. Антикоагулянты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">2.2.1. Антикоагулянты в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">2.3. Ингибиторы фибринолиза</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">2.4. Коагулянты (в т.ч. факторы свертывания крови), гемостатики</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">2.4.1. Коагулянты (в т.ч. факторы свертывания крови), гемостатики в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">2.5. Стимуляторы гемопоэза</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">2.5.1. Стимуляторы гемопоэза в комбинациях</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">3. Гомеопатические средства</ClFG_FG1>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">4. Гормоны и их антагонисты</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.1. Андрогены, антиандрогены</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">4.1.1. Андрогены, антиандрогены в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.2. Гормоны гипоталамуса, гипофиза, гонадотропины и их антагонисты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.3. Гормоны щитовидной и паращитовидных желез, их аналоги и антагонисты (включая антитиреоидные средства) /67/</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.4. Инсулины</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">4.4.1. Инсулины в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.5. Кортикостероиды</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">4.5.1. Глюкокортикостероиды</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">4.5.1.1. Глюкокортикостероиды в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">4.6. Эстрогены, гестагены; их гомологи и антагонисты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">4.6.1. Эстрогены, гестагены; их гомологи и антагонисты в комбинациях</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">5. Диагностические средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">5.1. Контрастные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">5.1.1. Рентгеноконтрастные средства</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">6. Иммунотропные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">6.1. Вакцины, сыворотки, фаги и анатоксины</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">6.2. Иммунодепрессанты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">6.3. Иммуномодуляторы</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">6.3.1. Интерлейкины</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">6.3.2. Интерфероны</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">6.3.2.1. Интерфероны в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">6.3.3. Индукторы интерферонов</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">6.3.4. Другие иммуномодуляторы</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">6.3.4.1. Другие иммуномодуляторы в комбинациях</ClFG_FG4>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">7. Интермедианты</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.1. Агонисты I<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-имидазолиновых рецепторов</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.2. Аденозинергические средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.3. Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип)</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">7.3.1. Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип) в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.4. Гистаминергические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">7.4.1. Гистаминолитики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">7.4.1.1. H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства</ClFG_FG4>
+<ClFG_FG5 aid:pstyle="ClFG_FG5">7.4.1.1.1. H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства в комбинациях</ClFG_FG5>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">7.4.1.2. H<CStyleSubscript aid:cstyle="CStyleSubscript">2</CStyleSubscript>-антигистаминные средства</ClFG_FG4>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">7.4.1.3. Стабилизаторы мембран тучных клеток</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">7.4.2. Гистаминомиметики</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.5. Дофаминомиметики</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.6. Простагландины, тромбоксаны, лейкотриены и их антагонисты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.7. Серотонинергические средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">7.8. Другие интермедианты</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">8. Метаболики</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.1. Анаболики</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.2. Антигипоксанты и антиоксиданты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.3. Белки и аминокислоты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.3.1. Белки и аминокислоты в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.4. Витамины и витаминоподобные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.4.1. Витамины и витаминоподобные средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.5. Гипогликемические синтетические и другие средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.5.1. Гипогликемические синтетические и другие средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.6. Гиполипидемические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.6.1. Статины</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.6.2. Другие гиполипидемические средства</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.7. Детоксицирующие средства, включая антидоты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.8. Корректоры метаболизма костной и хрящевой ткани</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.8.1. Корректоры метаболизма костной и хрящевой ткани в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.9. Макро- и микроэлементы</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.9.1. Макро- и микроэлементы в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.10. Средства, влияющие на обмен мочевой кислоты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.11. Средства для энтерального и парентерального питания</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.11.1. Средства для энтерального и парентерального питания в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.12. Средства, препятствующие образованию и способствующие растворению конкрементов</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.12.1. Средства, препятствующие образованию и способствующие растворению конкрементов в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.13. Ферменты и антиферменты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.13.1. Ферменты и антиферменты в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">8.14. Другие метаболики</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">8.14.1. Другие метаболики в комбинациях</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">9. Нейротропные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.1. Анксиолитики</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.2. Антидепрессанты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.3. Местнораздражающие средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.3.1. Местнораздражающие средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.4. Местные анестетики</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.4.1. Местные анестетики в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.5. Нейролептики</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.6. Ноотропы</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.6.1. Ноотропы в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.7. Общетонизирующие средства и адаптогены</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.8. Опиоиды, их аналоги и антагонисты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.8.1. Опиоидные ненаркотические анальгетики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">9.8.1.1. Опиоидные ненаркотические анальгетики в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.8.2. Опиоидные наркотические анальгетики</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.9. Противопаркинсонические средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.10. Противоэпилептические средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.11. Седативные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">9.11.1. Седативные средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.12. Снотворные средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">9.13. Другие нейротропные средства</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">10. Ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.1. НПВС — Производные салициловой кислоты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.2. НПВС — Пиразолоны</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">10.2.1. НПВС — Пиразолоны в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.3. НПВС — Производные уксусной кислоты и родственные соединения</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.4. НПВС — Оксикамы</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">10.4.1. НПВС — Оксикамы в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.5. НПВС — Производные пропионовой кислоты</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">10.5.1. НПВС — Производные пропионовой кислоты в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.6. НПВС — Коксибы</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.7. Анилиды</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">10.7.1. Анилиды в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">10.8. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">10.8.1. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">11. Органотропные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.1. Дерматотропные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.1.1. Дерматотропные средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.2. Желудочно-кишечные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.1. Адсорбенты</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.2. Антациды</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.2.1. Антациды в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.3. Гастропротекторы</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.4. Гепатопротекторы</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.4.1. Гепатопротекторы в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.5. Желчегонные средства и препараты желчи</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.5.1. Желчегонные средства и препараты желчи в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.6. H<CStyleSubscript aid:cstyle="CStyleSubscript">2</CStyleSubscript>-антигистаминные средства</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.7. Ингибиторы протонного насоса</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.7.1. Ингибиторы протонного насоса в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.8. Противодиарейные средства</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.9. Прокинетики</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.10. Слабительные средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.10.1. Слабительные средства в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.11. Стоматологические средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.2.11.1. Стоматологические средства в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.2.12. Другие желудочно-кишечные средства</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.3. Офтальмологические средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.3.1. Офтальмологические средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.4. Респираторные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.4.1. Антиконгестанты</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.4.1.1. Антиконгестанты в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.4.2. Противокашлевые средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.4.2.1. Противокашлевые средства в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.4.3. Секретолитики и стимуляторы моторной функции дыхательных путей</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.4.3.1. Секретолитики и стимуляторы моторной функции дыхательных путей в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.4.4. Другие респираторные средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.4.4.1. Другие респираторные средства в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.5. Сердечно-сосудистые средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.1. Агонисты I<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-имидазолиновых рецепторов</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.2. Ангиопротекторы и корректоры микроциркуляции</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.5.2.1. Ангиопротекторы и корректоры микроциркуляции в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.3. Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип)</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.5.3.1. Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип) в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.4. Антиаритмические средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.5.4.1. Антиаритмические средства в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.5. Бета-адреноблокаторы</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.6. Блокаторы кальциевых каналов</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.5.6.1. Блокаторы кальциевых каналов в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.7. Вазодилататоры</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.8. Ингибиторы АПФ</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.5.8.1. Ингибиторы АПФ в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.9. Корректоры нарушений мозгового кровообращения</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.10. Нитраты и нитратоподобные средства</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.11. Другие сердечно-сосудистые средства</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.5.12. Блокаторы эндотелиновых рецепторов</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.6. Спазмолитики миотропные</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.6.1. Спазмолитики миотропные в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">11.7. Средства, регулирующие функцию органов мочеполовой системы и репродукцию</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.7.1. Диуретики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.7.1.1. Диуретики в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.7.2. Регуляторы потенции</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.7.3. Средства, влияющие на обмен веществ в предстательной железе, и корректоры уродинамики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">11.7.3.1. Средства, влияющие на обмен веществ в предстательной железе, и корректоры уродинамики в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">11.7.4. Другие средства, регулирующие функцию органов мочеполовой системы и репродукцию</ClFG_FG3>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">12. Противомикробные, противопаразитарные и противоглистные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.1. Антибиотики</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.1. Аминогликозиды</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.1.1.1. Аминогликозиды в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.2. Карбапенемы</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.3. Линкозамиды</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.4. Макролиды и азалиды</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.1.4.1. Макролиды и азалиды в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.5. Пенициллины</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.1.5.1. Пенициллины в комбинациях</ClFG_FG4>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.1.6. Другие антибиотики</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.1.6.1. Другие антибиотики в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.2. Антисептики и дезинфицирующие средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.2.1. Антисептики и дезинфицирующие средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.3. Противовирусные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.3.1. Противовирусные (за исключением ВИЧ) средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.3.1.1. Противовирусные (за исключением ВИЧ) средства в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.4. Противоглистные средства</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.5. Противогрибковые средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.5.1. Противогрибковые средства в комбинациях</ClFG_FG3>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.6. Синтетические антибактериальные средства</ClFG_FG2>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.6.1. Сульфаниламиды</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.6.2. Хинолоны/фторхинолоны</ClFG_FG3>
+<ClFG_FG3 aid:pstyle="ClFG_FG3">12.6.3. Другие синтетические антибактериальные средства</ClFG_FG3>
+<ClFG_FG4 aid:pstyle="ClFG_FG4">12.6.3.1. Другие синтетические антибактериальные средства в комбинациях</ClFG_FG4>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">12.7. Другие противомикробные, противопаразитарные и противоглистные средства</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">13. Противоопухолевые средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">13.1. Антиметаболиты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">13.2. Противоопухолевые гормональные средства и антагонисты гормонов</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">13.3. Противоопухолевые средства — моноклональные антитела</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">13.4. Противоопухолевые средства — ингибиторы протеинкиназ</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">13.5. Другие противоопухолевые средства</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">14. Регенеранты и репаранты</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">14.1. Регенеранты и репаранты в комбинациях</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">15. Биологически активные добавки к пище (БАДы)</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.1. БАДы — белки, аминокислоты и их производные</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.2. БАДы — витаминно-минеральные комплексы</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.3. БАДы — витамины, витаминоподобные вещества и коферменты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.4. БАДы — естественные метаболиты</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.5. БАДы — макро- и микроэлементы</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.6. БАДы — полифенольные соединения</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.7. БАДы — пробиотики и пребиотики</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.8. БАДы — продукты растительного, животного или минерального происхождения</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">15.9. БАДы — ферменты растительного или микробного происхождения</ClFG_FG2>
+<OPIS_END aid:pstyle="OPIS_END"/>
+<ClFG_FG1 aid:pstyle="ClFG_FG1">16. Разные средства</ClFG_FG1>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">16.1. Средства для коррекции нарушений при алкоголизме, токсико- и наркомании</ClFG_FG2>
+<ClFG_FG2 aid:pstyle="ClFG_FG2">16.2. Другие разные средства</ClFG_FG2>
+<GlSubTitle aid:pstyle="GlSubTitle">2.3. Алфавитный перечень фармакологических групп и подгрупп</GlSubTitle>
+<INTRO_TEXT aid:pstyle="INTRO_TEXT">Алфавитный перечень содержит названия фармакологических групп и подгрупп, принятых в системе справочников <CStyleBold aid:cstyle="CStyleBold">РЛС</CStyleBold><CStyleBoldSuperscript aid:cstyle="CStyleBoldSuperscript">®</CStyleBoldSuperscript>, а также встречающихся в официальных инструкциях по применению препаратов, но отличающихся по написанию. Каждое название группы или подгруппы имеет ссылку на страницу Указателя лекарственных средств и действующих веществ по фармакологическим группам (раздел 2.4). Названия фармгрупп, отличных по написанию от принятых в <CStyleBold aid:cstyle="CStyleBold">РЛС</CStyleBold><CStyleBoldSuperscript aid:cstyle="CStyleBoldSuperscript">®</CStyleBoldSuperscript>, даются <CStyleItalic aid:cstyle="CStyleItalic">курсивом</CStyleItalic>, при них через слеш с указанием «см.» приводятся названия фармгрупп по фармакологическому указателю системы справочников <CStyleBold aid:cstyle="CStyleBold">РЛС</CStyleBold><CStyleBoldSuperscript aid:cstyle="CStyleBoldSuperscript">®</CStyleBoldSuperscript>.</INTRO_TEXT>
+<AlPer_FG aid:pstyle="AlPer_FG">H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">H<CStyleSubscript aid:cstyle="CStyleSubscript">2</CStyleSubscript>-антигистаминные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Агонисты I<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-имидазолиновых рецепторов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Адаптогенные средства</CStyleItalic> /см. Снотворные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Аденозинергические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Адренолитические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Адреномиметические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Адсорбенты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Альфа-адреноблокаторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Альфа-адреноблокаторы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Альфа-адреномиметики</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Альфа-адреномиметики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Аминогликозиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Аминогликозиды в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Аминоциклитольные антибиотики</CStyleItalic> /см. Аминогликозиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Анаболики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Анаболические стероидные средства</CStyleItalic> /см. Анаболики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Анальгезирующее средство комбинированное (НПВП + антацидное средство)</CStyleItalic> /см. НПВС — Производные салициловой кислоты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Анальгезирующие опиоидные + анальгезирующие ненаркотические средства</CStyleItalic> /см. Опиоиды, их аналоги и антагонисты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Анальгетические опиоидные средства</CStyleItalic> /см. Опиоиды, их аналоги и антагонисты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ангиопротекторы и корректоры микроциркуляции</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ангиопротекторы и корректоры микроциркуляции в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ангиотензинпревращающего фермента (АПФ) ингибиторы</CStyleItalic> /см. Ингибиторы АПФ/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Андрогены, антиандрогены</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Андрогены, антиандрогены в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Анилиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Анилиды в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Анксиолитики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антагонисты H</CStyleItalic><CStyleItalicSubscript aid:cstyle="CStyleItalicSubscript">1</CStyleItalicSubscript><CStyleItalic aid:cstyle="CStyleItalic">-гистаминовых рецепторов</CStyleItalic> /см. Снотворные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип)</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антагонисты рецепторов ангиотензина II (AT<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-подтип) в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антациды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антациды в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антиагрегантные средства</CStyleItalic> /см. НПВС — Производные салициловой кислоты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиагреганты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиагреганты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиаритмические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиаритмические средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибактериальные средства</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотик — азалид</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антибиотики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотики — азалиды</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотики — макролиды</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотики, азалиды</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотики, аминогликозиды</CStyleItalic> /см. Аминогликозиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антибиотики, макролиды</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антигипертензивные диуретические средства</CStyleItalic> /см. Диуретики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антигипоксанты и антиоксиданты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антидепрессанты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антикоагулянты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антикоагулянты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиконгестанты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиконгестанты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антиконгестивные средства — альфа-адреномиметики</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антиметаболиты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антипротеазные, антифибринолитические средства</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Антисептики и дезинфицирующие средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Антисептики и дезинфицирующие средства в комбинациях</CStyleItalic> /см. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">АПФ-ингибиторы</CStyleItalic> /см. Ингибиторы АПФ/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — белки, аминокислоты и их производные</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — витаминно-минеральные комплексы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — витамины, витаминоподобные вещества и коферменты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — естественные метаболиты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — макро- и микроэлементы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — полифенольные соединения</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — пробиотики и пребиотики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — продукты растительного, животного или минерального происхождения</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">БАДы — ферменты растительного или микробного происхождения</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Белки и аминокислоты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Белки и аминокислоты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Бета-адреноблокаторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Бета-адреноблокаторы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Бета-адреномиметики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Бета-адреномиметики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Биологически активные добавки к пище (БАДы)</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Блокатор «медленных» кальциевых каналов + ингибитор ангиотензинпревращающего фермента</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Блокаторы кальциевых каналов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Блокаторы кальциевых каналов в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Блокаторы эндотелиновых рецепторов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Бронхолитические средства</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Вазодилататоры</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Вакцины, сыворотки, фаги и анатоксины</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Вегетотропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Витамины и витаминоподобные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Витамины и витаминоподобные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Витамины — кальциево-фосфорного обмена регуляторы</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гастропротекторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гематотропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гепатопротекторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гепатопротекторы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипоазотемические средства растительного происхождения</CStyleItalic> /см. Диуретики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гипогликемические синтетические и другие средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гипогликемические синтетические и другие средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гиполипидемические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивное средство комбинированное (блокатор кальциевых каналов + ангиотензина II рецепторов антагонист + диуретик)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные + гиполипидемические средства (блокаторы «медленных» кальциевых каналов и ингибиторы ГМГ-КоА редуктазы)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные комбинированные средства (ангиотензинпревращающего фермента ингибиторы+ блокаторы «медленных» кальциевых каналов)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные комбинированные средства (блокатор «медленных» кальциевых каналов + диуретик + ангиотензинпревращающего фермента ингибитор)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные средства комбинированные (β</CStyleItalic><CStyleItalicSubscript aid:cstyle="CStyleItalicSubscript">1</CStyleItalicSubscript><CStyleItalic aid:cstyle="CStyleItalic">-адреноблокаторы селективные + блокаторы «медленных» кальциевых каналов (БМКК)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные средства комбинированные (ангиотензин-превращающего фермента ингибитор + блокатор кальциевых каналов)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные средства комбинированные (ангиотензинпревращающего фермента ингибиторы + блокаторы «медленных» кальциевых каналов)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные средства комбинированные (блокаторы «медленных» кальциевых каналов + ангиотензина II рецепторов антагонисты)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Гипотензивные средства комбинированные (блокаторы «медленных» кальциевых каналов + ингибиторы ангиотензинпревращающего фермента)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гистаминергические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гистаминолитики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гистаминомиметики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Глюкокортикостероиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Глюкокортикостероиды в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гомеопатические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гормоны гипоталамуса, гипофиза, гонадотропины и их антагонисты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гормоны и их антагонисты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Гормоны щитовидной и паращитовидных желез, их аналоги и антагонисты (включая антитиреоидные средства) /67/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Деконгестанты</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Дерматотропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Дерматотропные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Детоксицирующие средства, включая антидоты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Диагностические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Диуретики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Диуретики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Диуретические калийсберегающие средства</CStyleItalic> /см. Диуретики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Диуретические средства</CStyleItalic> /см. Диуретики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Дофаминомиметики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие антибиотики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие антибиотики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие гиполипидемические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие желудочно-кишечные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие иммуномодуляторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие иммуномодуляторы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие интермедианты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие метаболики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие метаболики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие нейротропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Другие противокашлевые препараты</CStyleItalic> /см. Противокашлевые средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие противомикробные, противопаразитарные и противоглистные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие противоопухолевые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие разные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие респираторные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие респираторные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие сердечно-сосудистые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие синтетические антибактериальные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие синтетические антибактериальные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Другие средства, регулирующие функцию органов мочеполовой системы и репродукцию</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Желудочно-кишечные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Желчегонные средства и препараты желчи</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Желчегонные средства и препараты желчи в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Иммунодепрессанты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Иммуномодуляторы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Иммунотропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ингибиторы АПФ</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ингибиторы АПФ в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ингибиторы костной резорбции — бисфосфонаты</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ингибиторы протеолиза</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ингибиторы протонного насоса</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ингибиторы протонного насоса в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ингибиторы резорбции костной ткани, бисфосфонаты</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ингибиторы фибринолиза</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Индукторы интерферонов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Инсулины</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Инсулины в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Интерлейкины</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Интермедианты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Интерфероны</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Интерфероны в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Кальциево-фосфорного обмена регуляторы</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Карбапенемы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Коагулянты (в т.ч. факторы свертывания крови), гемостатики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Коагулянты (в т.ч. факторы свертывания крови), гемостатики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Комбинированные гипотензивные средства (блокаторы «медленных» кальциевых каналов + ангиотензина II рецепторов антагонисты)</CStyleItalic> /см. Блокаторы кальциевых каналов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Контактные слабительные средства</CStyleItalic> /см. Слабительные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Контрастные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Корректоры метаболизма костной и хрящевой ткани</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Корректоры метаболизма костной и хрящевой ткани в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Корректоры метаболизма костной и хрящевой ткани — бисфосфонаты</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Корректоры нарушений мозгового кровообращения</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Кортикостероиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Костной резорбции ингибитор-бифосфонат</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Костной резорбции ингибиторы — бисфосфонаты</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Линкозамиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">м-, н-Холинолитики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">м-, н-Холиномиметики, в т.ч. антихолинэстеразные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Макро- и микроэлементы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Макро- и микроэлементы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Макролиды и азалиды</CStyleItalic> /см. Макролиды и азалиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Макролиды и азалиды в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Местнораздражающие средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Местнораздражающие средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Местнораздражающие средства природного происхождения</CStyleItalic> /см. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Местные анестетики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Местные анестетики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Метаболики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Метаболические средства</CStyleItalic> /см. Анаболики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">м-Холинолитики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">м-Холиномиметики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Нейролептики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Нейротропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Нестероидные противовоспалительные препараты</CStyleItalic> /см. НПВС — Производные салициловой кислоты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Нестероидные противовоспалительные препараты + антисептические средства</CStyleItalic> /см. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Нестероидный противовоспалительный препарат (НПВП)</CStyleItalic> /см. НПВС — Производные салициловой кислоты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Нитраты и нитратоподобные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ноотропы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ноотропы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Носа заболеваний средства лечения</CStyleItalic> /см. Антиконгестанты, Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Коксибы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Оксикамы</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Оксикамы в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Пиразолоны</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Пиразолоны в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Производные пропионовой кислоты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Производные пропионовой кислоты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Производные салициловой кислоты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">НПВС — Производные уксусной кислоты и родственные соединения</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">н-Холинолитики (миорелаксанты)</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">н-Холинолитики (миорелаксанты) в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">н-Холиномиметики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Обволакивающие средства растительного происхождения</CStyleItalic> /см. Слабительные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Общетонизирующие средства и адаптогены</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Опиоидные наркотические анальгетики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Опиоидные ненаркотические анальгетики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Опиоидные ненаркотические анальгетики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Опиоиды, их аналоги и антагонисты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Органотропные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Остеопороза средства лечения (костной резорбции ингибитор+кальциево-фосфорного обмена регулятор)</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Остеопороза средства лечения комбинированные (костной резорбции ингибитор бисфосфонат, кальциево-фосфорного обмена регулятор + кальция препарат)</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Отхаркивающие комбинированные средства</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Отхаркивающие средства растительного происхождения</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Офтальмологические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Офтальмологические средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Пенициллины</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Пенициллины в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Пищеварительные ферментные средства</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Пищеварительный тракт и продукты метаболизма — ферменты</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Препараты гистамина</CStyleItalic> /см. Гистаминомиметики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Препараты для лечения заболеваний горла</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Препараты для лечения заболеваний носа</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Препараты для лечения заболеваний пищеварительного тракта и нарушений обмена веществ — ферменты</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Препараты, улучшающие микроциркуляцию крови</CStyleItalic> /см. Аденозинергические средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Прокинетики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Простагландины, тромбоксаны, лейкотриены и их антагонисты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Протеазы ингибиторы</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Протеинкиназы ингибиторы</CStyleItalic> /см. Противоопухолевые средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Протеолитические средства</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противовирусные (за исключением ВИЧ) средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противовирусные (за исключением ВИЧ) средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противовирусные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противовоспалительные кишечные средства</CStyleItalic> /см. НПВС — Производные салициловой кислоты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противовоспалительные средства растительного происхождения</CStyleItalic> /см. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противовоспалительные, иммуномодулирующие средства</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоглистные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противогрибковые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противогрибковые средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противодиарейные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противокашлевые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противокашлевые средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противокашлевые средства центрального действия</CStyleItalic> /см. Противокашлевые средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противоконгестивное средство — альфа-адреномиметик</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противоконгестивные средства — α-адреномиметики</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противоконгестивные средства — альфа-адреномиметики</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противоконгестивные средства — вазоконстрикторы (альфа</CStyleItalic><CStyleItalicSubscript aid:cstyle="CStyleItalicSubscript">2</CStyleItalicSubscript><CStyleItalic aid:cstyle="CStyleItalic">-адреномиметики)</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противоконгестивные средства — вазоконстрикторы (альфа-адреномиметики)</CStyleItalic> /см. Антиконгестанты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противомикробные и противовоспалительные кишечные средства</CStyleItalic> /см. НПВС — Производные салициловой кислоты, Сульфаниламиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противомикробные комбинированные средства</CStyleItalic> /см. Сульфаниламиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противомикробные средства — сульфаниламиды</CStyleItalic> /см. Сульфаниламиды/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противомикробные, противопаразитарные и противоглистные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоопухолевые гормональные средства и антагонисты гормонов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоопухолевые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоопухолевые средства — ингибиторы протеинкиназ</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоопухолевые средства — моноклональные антитела</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противопаркинсонические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Противорвотные средства, центральные блокаторы дофаминовых рецепторов</CStyleItalic> /см. Прокинетики/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Противоэпилептические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Радиоизотопные средства</CStyleItalic> /см. Рентгеноконтрастные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Разные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Растительного происхождения средства</CStyleItalic> /см. Другие респираторные средства в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Регенеранты и репаранты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Регенеранты и репаранты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Регуляторы кальциевого обмена</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Регуляторы обмена кальция и фосфора</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Регуляторы потенции</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Рентгеноконтрастные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Репарации тканей стимуляторы</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Репарации тканей стимуляторы природного происхождения</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Респираторные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Седативные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Седативные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Секретолитики и стимуляторы моторной функции дыхательных путей</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Секретолитики и стимуляторы моторной функции дыхательных путей в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Сердечно-сосудистые средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Серотонинергические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Серотониновых рецепторов стимуляторы</CStyleItalic> /см. Слабительные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Синтетические антибактериальные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Слабительные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Слабительные средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Слабительные средства растительного происхождения</CStyleItalic> /см. Слабительные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Снотворные и седативные препараты другие</CStyleItalic> /см. Снотворные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Снотворные средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Спазмолитики миотропные</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Спазмолитики миотропные в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства для коррекции нарушений при алкоголизме, токсико- и наркомании</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для лечения нарушений сна</CStyleItalic> /см. Снотворные средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для лечения нефролитиаза</CStyleItalic> /см. Средства, препятствующие образованию и способствующие растворению конкрементов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для лечения остеопороза</CStyleItalic> /см. Корректоры метаболизма костной и хрящевой ткани/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для лечения почечной недостаточности</CStyleItalic> /см. Средства для энтерального и парентерального питания в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для парентерального питания</CStyleItalic> /см. Средства для энтерального и парентерального питания в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства для устранения симптомов ОРЗ и «простуды»</CStyleItalic> /см. Прочие ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства, в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства для энтерального и парентерального питания</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства для энтерального и парентерального питания в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства лечения наследственных ферментопатий</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства парентерального питания</CStyleItalic> /см. Средства для энтерального и парентерального питания в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства парентерального питания — аминокислоты</CStyleItalic> /см. Средства для энтерального и парентерального питания в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства растительного происхождения</CStyleItalic> /см. Средства, препятствующие образованию и способствующие растворению конкрементов в комбинациях/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, влияющие на обмен веществ в предстательной железе, и корректоры уродинамики</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, влияющие на обмен веществ в предстательной железе, и корректоры уродинамики в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, влияющие на обмен мочевой кислоты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Средства, влияющие на органы дыхания</CStyleItalic> /см. Аденозинергические средства/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, препятствующие образованию и способствующие растворению конкрементов</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, препятствующие образованию и способствующие растворению конкрементов в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Средства, регулирующие функцию органов мочеполовой системы и репродукцию</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Стабилизаторы мембран тучных клеток</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Статины</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Стимуляторы гемопоэза</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Стимуляторы гемопоэза в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Стоматологические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Стоматологические средства в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Сульфаниламиды</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Фермент-имиглюцераза</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ферментные средства</CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG"><CStyleItalic aid:cstyle="CStyleItalic">Ферментопатий наследственных средства лечения </CStyleItalic> /см. Ферменты и антиферменты/</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ферменты и антиферменты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Ферменты и антиферменты в комбинациях</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Хинолоны/фторхинолоны</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Холинолитические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Холиномиметические средства</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Эстрогены, гестагены; их гомологи и антагонисты</AlPer_FG>
+<AlPer_FG aid:pstyle="AlPer_FG">Эстрогены, гестагены; их гомологи и антагонисты в комбинациях</AlPer_FG>
+</Story>
+</Root>
