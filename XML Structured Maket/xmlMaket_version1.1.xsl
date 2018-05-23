@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="1.0">
+    <!-- Эта версия преобразования отдичатеся от предыдущей тем, что картинки из описаний и формулы вставлятся как inline-объекты в абзацы со стилем Graphics, в пред. версиях в абзац Без стиля -->
     <!-- Ширина большинства таблиц задается здесь в пунктах -->
     <xsl:param name="table-width">161.575</xsl:param>
     <!-- Default Rule: Match everything, ignore it,  and keep going "down". -->
@@ -51,7 +52,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <Image href="file:///{$uriimg}"/>
+        <Graphics xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="Graphics" href="file:///{$uriimg}"/>
         <xsl:text>&#xA;</xsl:text>        
     </xsl:template>
 <!-- Inline templates -->
