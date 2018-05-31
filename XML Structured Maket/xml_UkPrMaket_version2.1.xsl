@@ -4,23 +4,44 @@
     exclude-result-prefixes="xs"
         xpath-default-namespace="http://www.w3.org/1999/xhtml"
     version="2.0">
-    <!-- Ширина большинства таблиц задается здесь в пунктах -->
-    <xsl:param name="table-width">504.567</xsl:param>
-
+    <!-- Версия 2.1 завершающий тег </UKPR> ставится перед открывающимся, если описание не первое 
+    Теги UKPR расставляются перед тегом UKPR_FIRM_BEGIN, который соотв. тегу hr в xhtml без аттр. align и с аттр. color
+    к сожалению, при такой расстановке тегов в родительские UKPR кроме всего, что относится к фирме, иногда попадает тег UKPR_FIRSTLETTER,
+    но избежать этого трудно, а польза от родительских тегов большая - возможна перестановка фирм, импорт-замена фирмы с помощью тегов UKPR
+    
+    Вводятся переменные(sequence) в блоке обработки таблиц (по смыслу как массивы с величинами ширины столбцов,
+    чтобы при обработке ячеек необходимому атрибуту присваивалась соотв. ширина столбца)
+    
+    -->
+    
 
     <xsl:template match="body">
         <xsl:text>&#xA;</xsl:text>
         <Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
             <xsl:apply-templates select="*"/>
+            <!-- Ставится принудительно закрывающийся тег </UKPR> перед закрывающимся тегом </Chapter> для зхакрытия последнего описания фирмы-->
+            <xsl:text disable-output-escaping="yes"><![CDATA[</UKPR>]]></xsl:text>            
         </Chapter>
     </xsl:template>
     
-    <xsl:template match="hr">
+    <xsl:template match="hr"> <!-- для двух типов линеек в макете вводятся два стиля, которые присваиваются в зависимости от атрибутов тега hr 
+                                Кроме того, по факту hr без аттр. align вводятся обрамляющие теги UKPR/ - подробнее выше-->
         <xsl:choose>
             <xsl:when test="@align">
                 <UKPR_FIRM_PREPBEGIN xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="UKPR_FIRM_PREPBEGIN"></UKPR_FIRM_PREPBEGIN>                
             </xsl:when>
             <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="preceding::p[@class='UKPR_F_NAME']">
+                            <!-- Закрывается тег </UKPR> и открывается новый <UKPR> для всех описаний фирм кроме первого, когда встечается класс UKPR_F_NAME -->
+                            <xsl:text disable-output-escaping="yes"><![CDATA[</UKPR>]]></xsl:text>
+                            <xsl:text disable-output-escaping="yes"><![CDATA[<UKPR>]]></xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- Открывается тег <UKPR> для первого описания фирмы-->
+                            <xsl:text disable-output-escaping="yes"><![CDATA[<UKPR>]]></xsl:text>                    
+                        </xsl:otherwise>
+                    </xsl:choose>
                 <UKPR_FIRM_BEGIN xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="UKPR_FIRM_BEGIN"></UKPR_FIRM_BEGIN>                
             </xsl:otherwise>
         </xsl:choose>
@@ -31,9 +52,13 @@
         <xsl:text disable-output-escaping="yes"><![CDATA[<]]></xsl:text><xsl:value-of select="@class"/><xsl:text> aid:pstyle="</xsl:text><xsl:value-of select="@class"/><xsl:text>"</xsl:text><xsl:text disable-output-escaping="yes"><![CDATA[>]]></xsl:text>
             <xsl:apply-templates select="text() | *" mode="character-style-range"/>
         <xsl:text disable-output-escaping="yes"><![CDATA[</]]></xsl:text><xsl:value-of select="@class"/><xsl:text disable-output-escaping="yes"><![CDATA[>]]></xsl:text>
+        <xsl:if test="@class='UKPR_F_NAME'"> <!-- генерация дополнительного абзаца COLONT_UKPR после UKPR_F_NAME для формирования колонтитулов в макете-->
+            <xsl:text>&#xA;</xsl:text>
+            <COLONT_UKPR xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="COLONT_UKPR"><xsl:value-of select="."/></COLONT_UKPR> <!-- для формирования колонтитулов в макете по значениям абзацев со стилями, проверяемыми во сравнении, добавляется дублирующий абзац со стилем COLONT_Opis -->
+        </xsl:if>
         <xsl:choose>
             <xsl:when test="following-sibling::p or following-sibling::img">
-                <!-- в частности, перевод строки в формирующемся xml не должен всавтляться перед закрывающим тегом Cell, в разбираемомо html соотв. </td> -->
+                <!-- в частности, перевод строки в формирующемся xml не должен вставляться перед закрывающим тегом Cell, в разбираемомо html соотв. </td> -->
                 <xsl:text>&#xA;</xsl:text>
             </xsl:when>
         </xsl:choose>
@@ -46,7 +71,6 @@
 
         </xsl:variable>
         <Graphics xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="Graphics" href="file:///{$uriimg}"/>
-        <xsl:text>&#xA;</xsl:text>        
     </xsl:template>
 <!-- Inline templates -->
 <!-- набор шаблонов с рекурсивным вызовом, обрабатывающих текст и стилевые теги внутри тегов p.
@@ -185,12 +209,20 @@
                 </xsl:variable>
                 <xsl:variable name="colcount_inmaxcol_row"
                     select="count(descendant::tr[position() = $maxcol_row]/td)"/>
-                <xsl:variable name="columnWidth"
-                    select="$table-width div $colcount_inmaxcol_row"/>
+                <xsl:variable name="arrColWidth" as="xs:integer*"> <!-- В зависимости от количества столбцов формируются переменные-последовательности, состоящие из величин ширины столбцов -->
+                    <xsl:choose>
+                        <xsl:when test="count(descendant::td)=2">
+                            <xsl:sequence select="(174, 300)"/> <!-- величины ширины столбцов для таблицы, содержащей логотип и название фирмы с адресом -->
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:sequence select="(120, 121, 111, 113, 39)"/> <!-- величины ширины столбцов для таблицы, содержащей информацию о препаратах в текущем указателе -->
+                        </xsl:otherwise>
+                    </xsl:choose>                    
+                </xsl:variable>
                 <xsl:variable name="header-row-count">
                     <xsl:call-template name="Table_HeaderRowCount"/> <!-- подсчет числа строк в заголовке таблицы: берется максимальный среди всех ячеек первой строки атрибут rowspan -->          
                 </xsl:variable>
-                <xsl:variable name="table-style">
+                <xsl:variable name="table-style"> <!-- В зависимости от количества столбцов определяется стиль таблицы: в макете их всего два -->
                     <xsl:choose>
                         <xsl:when test="count(descendant::td)=2">
                             <xsl:value-of select="'TableMono_0Line'"/>
@@ -219,6 +251,7 @@
                         <xsl:choose>
                             <xsl:when test="position() &lt;= $header-row-count"> <!-- формирование тегов ячееек строк заголовка таблицы -->
                                 <xsl:for-each select="td">
+                                    <xsl:variable name="columnWidth" select="subsequence($arrColWidth, position(),1)"/> <!-- Определяется ширина столбца путем выкусывания величины из определенной выше последовательности по номеру столбца-->
                                     <xsl:variable name="cell-row-span">
                                         <xsl:choose>
                                             <xsl:when
@@ -251,6 +284,7 @@
                             </xsl:when>
                             <xsl:otherwise> <!-- формирование тегов ячеек обычных незаголовочных строк таблицы-->
                                 <xsl:for-each select="td">
+                                    <xsl:variable name="columnWidth" select="subsequence($arrColWidth, position(),1)"/> <!-- Определяется ширина столбца путем выкусывания величины из определенной выше последовательности по номеру столбца-->                                    
                                     <xsl:variable name="cell-row-span">
                                         <xsl:choose>
                                             <xsl:when
