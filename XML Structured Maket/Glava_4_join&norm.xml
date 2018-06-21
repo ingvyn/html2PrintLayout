@@ -1,13 +1,12 @@
-<?xml version="1.0"?>
-<Root xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
-<Story>
-<Glava aid:pstyle="Glava">Глава 4</Glava>
+<?xml version="1.0" encoding="UTF-8"?>    
+<Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/"><Glava aid:pstyle="Glava">Глава 4</Glava>
 <GlTitle aid:pstyle="GlTitle">Анатомо-терапевтическо-химический (АТХ) указатель</GlTitle>
 <INTRO_TEXT aid:pstyle="INTRO_TEXT">Анатомо-терапевтическо-химический (АТХ) указатель рекомендован ВОЗ и широко используется во многих странах для изучения обращения лекарственных средств.</INTRO_TEXT>
 <INTRO_TEXT aid:pstyle="INTRO_TEXT">Каждый код указателя содержит 7 знаков, составляющих 5 уровней: 1-й уровень, первый знак (латинская прописная буква) указывает на анатомическую область, заболевания органов которой служат показаниями к применению препаратов конкретного действующего вещества, — основная анатомическая группа; 2-й уровень, второй и третий знак (арабские цифры) — основная терапевтическая группа; 3-й уровень, четвертый знак (латинская прописная буква) — терапевтическая подгруппа; 4-й уровень, пятый знак (латинская прописная буква) — терапевтическо-химическая группа; 5-й уровень, шестой и седьмой знак (арабские цифры) — наименование действующего вещества или комбинации действующих веществ.</INTRO_TEXT>
 <INTRO_TEXT aid:pstyle="INTRO_TEXT">Авторитетным источником достоверной информации о кодах АТХ является постоянно обновляемый интернет-ресурс<CStyleItalic aid:cstyle="CStyleItalic"> www.whocc.no, </CStyleItalic>функционирующий в рамках ВОЗ.</INTRO_TEXT>
 <INTRO_TEXT aid:pstyle="INTRO_TEXT">Указатель включает информацию о кодах АТХ только тех препаратов, которые вошли в текущий выпуск <CStyleBold aid:cstyle="CStyleBold">Энциклопедии лекарств</CStyleBold>. Коды АТХ также приведены в разделе 1.5 — Описания лекарственных средств, БАДов, медицинских изделий и других товаров аптечного ассортимента — и в представительских страницах фирм-участников в разделе 5.2 — Производители лекарственных средств или их представители в России с перечнем выпускаемой продукции.</INTRO_TEXT>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">A Пищеварительный тракт и обмен веществ</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">A Пищеварительный тракт и...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">A01 Стоматологические препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">A01A Стоматологические препараты</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">A01AD Препараты для лечения заболеваний полости рта другие</ClATC_ATC4>
@@ -249,6 +248,7 @@
 <UkATC_TName aid:pstyle="UkATC_TName">ОКТОЛИПЕН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс., конц. для р-ра д/инф., табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Фармстандарт АО)</CStyleItalic></UkATC_TName>
 <UkATC_TName aid:pstyle="UkATC_TName">ЭСПА-ЛИПОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: конц. для р-ра д/инф., табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Esparma GmbH)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">B Кровь и система кроветворения</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">B Кровь и система...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">B01 Антитромботические средства</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">B01A Антитромботические средства</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">B01AB Гепарины</ClATC_ATC4>
@@ -303,6 +303,7 @@
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">B03XA Препараты для лечения анемии другие</ClATC_ATC4>
 <UkATC_TName aid:pstyle="UkATC_TName">ЭРАЛЬФОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для в/в и п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Сотекс ФармФирма)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">C Сердечно-сосудистая система</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">C Сердечно-сосудистая система</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">C01 Препараты для лечения заболеваний сердца</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">C01B Антиаритмические препараты I и III классов</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">C01BC Антиаритмические препараты Ic класса</ClATC_ATC4>
@@ -565,6 +566,7 @@
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">C10AX14 Алирокумаб</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ПРАЛУЭНТ: р-р для п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Представительство Акционерного общества «Санофи-авентис груп»)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">D Дерматологические препараты</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">D Дерматологические препараты</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">D01 Противогрибковые препараты для лечения заболеваний кожи</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">D01A Противогрибковые препараты для местного применения</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">D01AC Производные имидазола и триазола</ClATC_ATC4>
@@ -652,6 +654,7 @@
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">D11AX01 Миноксидил</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ГЕНЕРОЛОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: спрей д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(BELUPO d.d.)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">G Mочеполовая система и половые гормоны</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">G Mочеполовая система и половые гормоны</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">G01 Противомикробные препараты и антисептики, применяемые в гинекологии</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">G01A Противомикробные препараты и антисептики, кроме комбинированных препаратов с глюкокортикоидами</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">G01AA Антибактериальные препараты</ClATC_ATC4>
@@ -780,6 +783,7 @@
 <UkATC_TName aid:pstyle="UkATC_TName">ПРОСТАГУТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> ФОРТЕ: капс. <CStyleItalic aid:cstyle="CStyleItalic">(Dr. Willmar Schwabe)</CStyleItalic></UkATC_TName>
 <UkATC_TName aid:pstyle="UkATC_TName">ПРОСТАПЛАНТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс. <CStyleItalic aid:cstyle="CStyleItalic">(Dr. Willmar Schwabe)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">H Гормональные препараты для системного назначения (исключая половые гормоны)</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">H Гормональные препараты для...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">H01 Гипоталамо-гипофизарные гормоны и их аналоги</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">H01A Гормоны передней доли гипофиза и их аналоги</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">H01AC Соматропин и его агонисты</ClATC_ATC4>
@@ -822,6 +826,7 @@
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">H05AA02 Терипаратид</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ФОРСТЕО<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Lilly)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">J Противомикробные препараты системного действия</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">J Противомикробные препараты системного...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">J01 Антибактериальные препараты системного действия</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">J01C Бета-лактамные антибиотики, пенициллины</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">J01CR Пенициллины, в комбинации с ингибиторами бета-лактамаз</ClATC_ATC4>
@@ -899,6 +904,7 @@
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">J07AL02 Пневмококковый очищенный полисахаридный антиген конъюгированный</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ПРЕВЕНАР<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> 13 (ВАКЦИНА ПНЕВМОКОККОВАЯ ПОЛИСАХАРИДНАЯ КОНЪЮГИРОВАННАЯ АДСОРБИРОВАННАЯ, ТРИНАДЦАТИВАЛЕНТНАЯ): сусп. для в/м введ. <CStyleItalic aid:cstyle="CStyleItalic">(Пфайзер Инновации ООО)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">L Противоопухолевые и иммуномодулирующие препараты </ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">L Противоопухолевые и иммуномодулирующие...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">L01 Противоопухолевые препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">L01B Антиметаболиты</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">L01BC Аналоги пиримидина</ClATC_ATC4>
@@ -945,6 +951,7 @@
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">L04AA33 Ведолизумаб</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ЭНТИВИО<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: лиоф. д/конц. для р-ра д/инф. <CStyleItalic aid:cstyle="CStyleItalic">(Takeda Pharmaceuticals Limited Liability Company)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">M Костно-мышечная система</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">M Костно-мышечная система</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">M01 Противовоспалительные и противоревматические препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">M01A Нестероидные противовоспалительные и противоревматические препараты</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">M01AB Производные уксусной кислоты и родственные соединения</ClATC_ATC4>
@@ -1049,6 +1056,7 @@
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">M09AX Прочие препараты для лечения заболеваний костно-мышечной системы</ClATC_ATC4>
 <UkATC_TName aid:pstyle="UkATC_TName">АЛФЛУТОП: р-р д/ин. <CStyleItalic aid:cstyle="CStyleItalic">(Biotehnos)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">N Нервная система</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">N Нервная система</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">N01 Анестетики</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">N01B Местные анестетики</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">N01BB Амиды</ClATC_ATC4>
@@ -1285,12 +1293,14 @@
 <UkATC_TName aid:pstyle="UkATC_TName">НЕЙРОКС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для в/в и в/м введ. <CStyleItalic aid:cstyle="CStyleItalic">(Сотекс ФармФирма)</CStyleItalic></UkATC_TName>
 <UkATC_TName aid:pstyle="UkATC_TName">ЦЕЛЛЕКС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Фарм-Синтез АО)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">P Противопаразитарные препараты, инсектициды и репелленты</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">P Противопаразитарные препараты, инсектициды...</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">P02 Противогельминтные препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">P02C Препараты для лечения нематодоза</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">P02CA Производные бензимидазола</ClATC_ATC4>
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">P02CA01 Мебендазол</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ВОРМИН: табл. <CStyleItalic aid:cstyle="CStyleItalic">(Cadila Pharmaceuticals)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">R Дыхательная система</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">R Дыхательная система</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">R01 Назальные препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">R01A Деконгестанты и другие назальные препараты для местного применения</ClATC_ATC3>
 <UkATC_TName aid:pstyle="UkATC_TName">ПИНОСОЛ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капли наз., спрей наз. <CStyleItalic aid:cstyle="CStyleItalic">(Представительство Акционерного общества «Санофи-авентис груп»)</CStyleItalic></UkATC_TName>
@@ -1422,6 +1432,7 @@
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">R07AX Препараты для лечения заболеваний органов дыхания другие</ClATC_ATC4>
 <UkATC_TName aid:pstyle="UkATC_TName">СИНУПРЕТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: драже, капли для приема внутрь <CStyleItalic aid:cstyle="CStyleItalic">(Bionorica SE)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">S Органы чувств</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">S Органы чувств</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">S01 Офтальмологические препараты</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">S01A Противомикробные препараты</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">S01AB Сульфаниламиды</ClATC_ATC4>
@@ -1465,6 +1476,7 @@
 <UkATC_TName aid:pstyle="UkATC_TName">ВИЗОМИТИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капли глазн. <CStyleItalic aid:cstyle="CStyleItalic">(Митотех ООО)</CStyleItalic></UkATC_TName>
 <UkATC_TName aid:pstyle="UkATC_TName">РЕТИНАЛАМИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: лиоф. д/р-ра для в/м и парабульб. введ. <CStyleItalic aid:cstyle="CStyleItalic">(ГЕРОФАРМ)</CStyleItalic></UkATC_TName>
 <ClATC_ATC1 aid:pstyle="ClATC_ATC1">V Прочие препараты</ClATC_ATC1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">V Прочие препараты</COLONT_Opis>
 <ClATC_ATC2 aid:pstyle="ClATC_ATC2">V03 Терапевтические препараты другие</ClATC_ATC2>
 <ClATC_ATC3 aid:pstyle="ClATC_ATC3">V03A Терапевтические препараты другие</ClATC_ATC3>
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">V03AE Препараты для лечения гиперкалиемии и гиперфосфатемии</ClATC_ATC4>
@@ -1493,5 +1505,4 @@
 <ClATC_ATC4 aid:pstyle="ClATC_ATC4">V09IB Соединения индия (<CStyleSuperscript aid:cstyle="CStyleSuperscript">111</CStyleSuperscript>In)</ClATC_ATC4>
 <ClATC_ATC5 aid:pstyle="ClATC_ATC5">V09IB01 Индия (<CStyleSuperscript aid:cstyle="CStyleSuperscript">111</CStyleSuperscript>In) пентетреотид</ClATC_ATC5>
 <UkATC_TName aid:pstyle="UkATC_TName">ОКТРЕОТИД, 111 IN: лиоф. д/р-ра для в/в введ. <CStyleItalic aid:cstyle="CStyleItalic">(Фарм-Синтез АО)</CStyleItalic></UkATC_TName>
-</Story>
-</Root>
+</Chapter> 

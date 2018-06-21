@@ -1,8 +1,7 @@
-<?xml version="1.0"?>
-<Root xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
-<Story>
-<GlSubTitle aid:pstyle="GlSubTitle">3.3. Указатель лекарственных средств по МКБ–10</GlSubTitle>
+<?xml version="1.0" encoding="UTF-8"?>    
+<Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/"><GlSubTitle aid:pstyle="GlSubTitle">3.3. Указатель лекарственных средств по МКБ–10</GlSubTitle>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС I. A00-В99. Некоторые инфекционные и паразитарные болезни</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС I. A00-В99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">A00-A09. Кишечные инфекции</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">A02. Другие сальмонеллезные инфекции</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Другие метаболики</UKMKB_PHGR>
@@ -667,6 +666,7 @@
 <UkMKB_TName aid:pstyle="UkMKB_TName">ВАЛОГАРД: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Фармак ПАО)</CStyleItalic></UkMKB_TName>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ВАЛЦИКОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(ВЕРТЕКС АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС II. C00-D48. Новообразования</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС II. C00-D48</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">C00-C97. Злокачественные новообразования</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">C15-C26. Злокачественные новообразования органов пищеварения</UKMKB_LEVEL2>
 <UKMKB_LEVEL3 aid:pstyle="UKMKB_LEVEL3">C15. Злокачественное новообразование пищевода</UKMKB_LEVEL3>
@@ -978,6 +978,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Трамадол*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТРАМАДОЛ: р-р д/ин. <CStyleItalic aid:cstyle="CStyleItalic">(Органика АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС III. D50-D89. Болезни крови, кроветворных органов и отдельные нарушения, вовлекающие иммунный механизм</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС III. D50-D89</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">D50-D53. Анемии, связанные с питанием</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">D50. Железодефицитная анемия</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Стимуляторы гемопоэза</UKMKB_PHGR>
@@ -1082,6 +1083,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Транексамовая кислота*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТРАНЕКСАМ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для в/в введ.; табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(STADA)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС IV. E00-E90. Болезни эндокринной системы, расстройства питания и нарушения обмена веществ</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС IV. E00-E90</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">E00-E07. Болезни щитовидной железы</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">E00. Синдром врожденной йодной недостаточности</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Макро- и микроэлементы</UKMKB_PHGR>
@@ -1701,6 +1703,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Левотироксин натрия*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ЭУТИРОКС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. <CStyleItalic aid:cstyle="CStyleItalic">(МЕРК СЕРОНО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС V. F00-F99. Психические расстройства и расстройства поведения</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС V. F00-F99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">F00-F09. Органические, включая симптоматические, психические расстройства</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">F00. Деменция при болезни Альцгеймера (G30+)</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Другие нейротропные средства</UKMKB_PHGR>
@@ -2379,6 +2382,7 @@
 <UkMKB_TName aid:pstyle="UkMKB_TName">РИЛЕПТИД<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkMKB_TName>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТОРЕНДО<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> КУ-ТАБ: табл. д/рассас. <CStyleItalic aid:cstyle="CStyleItalic">(KRKA)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС VI. G00-G99. Болезни нервной системы</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС VI. G00-G99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">G00-G09. Воспалительные болезни центральной нервной системы</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">G00. Бактериальный менингит, не классифицированный в других рубриках</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Вакцины, сыворотки, фаги и анатоксины</UKMKB_PHGR>
@@ -2908,6 +2912,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Йогексол*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТОМОГЕКСОЛ: р-р д/ин. <CStyleItalic aid:cstyle="CStyleItalic">(Фармак ПАО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС VII. H00-H59. Болезни глаза и его придаточного аппарата</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС VII. H00-H59</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">H00-H06. Болезни век, слезных путей и глазницы</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">H01. Другие воспаления век</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Глюкокортикостероиды</UKMKB_PHGR>
@@ -3222,6 +3227,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Интерферон альфа-2b человеческий рекомбинантный + Дифенгидрамин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ОФТАЛЬМОФЕРОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капли глазн. <CStyleItalic aid:cstyle="CStyleItalic">(Фирн М)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС VIII. H60-H95. Болезни уха и сосцевидного отростка</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС VIII. H60-H95</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">H60-H62. Болезни наружного уха</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">H60. Наружный отит</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства</UKMKB_PHGR>
@@ -3424,6 +3430,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Пирацетам + Циннаризин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ФЕЗАМ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс. <CStyleItalic aid:cstyle="CStyleItalic">(Teva)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС IX. I00-I99. Болезни системы кровообращения</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС IX. I00-I99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">I00-I02. Острая ревматическая лихорадка</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">I00. Ревматическая лихорадка без упоминания о вовлечении сердца</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Антикоагулянты</UKMKB_PHGR>
@@ -4689,6 +4696,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Натрия амидотризоат*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТРИОМБРАСТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р д/ин. <CStyleItalic aid:cstyle="CStyleItalic">(Фармак ПАО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС X. J00-J99. Болезни органов дыхания</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС X. J00-J99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">J00-J06. Острые респираторные инфекции верхних дыхательных путей</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">J00. Острый назофарингит [насморк]</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства</UKMKB_PHGR>
@@ -5952,6 +5960,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Карбоцистеин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">БРОНХОБОС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс.; сироп <CStyleItalic aid:cstyle="CStyleItalic">(Представительство АО «Босналек»)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XI. K00-K93. Болезни органов пищеварения</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XI. K00-K93</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">K00-K14. Болезни полости рта, слюнных желез и челюстей</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">K00. Нарушения развития и прорезывания зубов</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Гомеопатические средства</UKMKB_PHGR>
@@ -7053,6 +7062,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Гемицеллюлаза + Желчи компоненты + Панкреатин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ФЕСТАЛ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: драже кишечнораствор. <CStyleItalic aid:cstyle="CStyleItalic">(Представительство Акционерного общества «Санофи-авентис груп»)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XII. L00-L99. Болезни кожи и подкожной клетчатки</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XII. L00-L99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">L00-L08. Инфекции кожи и подкожной клетчатки</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">L01. Импетиго</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Глюкокортикостероиды в комбинациях</UKMKB_PHGR>
@@ -7756,6 +7766,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Сульфадиазин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">СУЛЬФАРГИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: мазь д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(Гриндекс АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XIII. M00-M99. Болезни костно-мышечной системы и соединительной ткани</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XIII. M00-M99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">M00-M25. Артропатии</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">M00-M03. Инфекционные артропатии</UKMKB_LEVEL2>
 <UKMKB_LEVEL3 aid:pstyle="UKMKB_LEVEL3">M00. Пиогенный артрит</UKMKB_LEVEL3>
@@ -8655,6 +8666,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Натрия амидотризоат*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТРИОМБРАСТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р д/ин. <CStyleItalic aid:cstyle="CStyleItalic">(Фармак ПАО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XIV. N00-N99. Болезни мочеполовой системы</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XIV. N00-N99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">N00-N08. Гломерулярные болезни</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">N03. Хронический нефритический синдром</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Диуретики</UKMKB_PHGR>
@@ -9425,6 +9437,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Эстриол</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ОРНИОНА<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: крем ваг. <CStyleItalic aid:cstyle="CStyleItalic">(ВЕРТЕКС АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XV. O00-O99. Беременность, роды и послеродовой период</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XV. O00-O99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">O00-O08. Беременность с абортивным исходом</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">O04. Медицинский аборт</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Простагландины, тромбоксаны, лейкотриены и их антагонисты</UKMKB_PHGR>
@@ -9580,6 +9593,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Железа сульфат + Аскорбиновая кислота*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">СОРБИФЕР ДУРУЛЕС: табл. п.о. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XVI. P00-P96. Отдельные состояния, возникающие в перинатальном периоде</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XVI. P00-P96</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">P00-P04. Поражения плода и новорожденного, обусловленные состояниями матери, осложнениями беременности, родов и родоразрешения</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">P02. Поражения плода и новорожденного, обусловленные осложнениями со стороны плаценты, пуповины и плодных оболочек</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Ингибиторы фибринолиза</UKMKB_PHGR>
@@ -9614,6 +9628,7 @@
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Дерматотропные средства</UKMKB_PHGR>
 <UkMKB_TName aid:pstyle="UkMKB_TName">АФЛОКРЕМ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> ЭМОЛИЕНТ: крем д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(BELUPO d.d.)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XVII. Q00-Q99. Врожденные аномалии [пороки развития], деформации и хромосомные нарушения</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XVII. Q00-Q99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">Q00-Q07. Врожденные аномалии [пороки развития] нервной системы</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">Q07. Другие врожденные аномалии [пороки развития] нервной системы</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Витамины и витаминоподобные средства</UKMKB_PHGR>
@@ -9651,6 +9666,7 @@
 <UkMKB_TName aid:pstyle="UkMKB_TName">ДИНАТРОП<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: лиоф. д/р-ра для п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Dynamic Development Laboratories Co.)</CStyleItalic></UkMKB_TName>
 <UkMKB_TName aid:pstyle="UkMKB_TName">РАСТАН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для п/к введ. <CStyleItalic aid:cstyle="CStyleItalic">(Фармстандарт АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XVIII. R00-R99. Симптомы, признаки и отклонения от нормы, выявленные при клинических и лабораторных исследованиях, не классифицированные в других рубриках</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XVIII. R00-R99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">R00-R09. Симптомы и признаки, относящиеся к системам кровообращения и дыхания</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">R00. Отклонения от нормы сердечного ритма</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Бета-адреноблокаторы</UKMKB_PHGR>
@@ -10594,6 +10610,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Лимонная кислота + Калия гидрокарбонат + Натрия цитрат</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">БЛЕМАРЕН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. шип. <CStyleItalic aid:cstyle="CStyleItalic">(Esparma GmbH)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XIX. S00-T98. Травмы, отравления и некоторые другие последствия воздействия внешних причин</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XIX. S00-T98</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">S00-S09. Травмы головы</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">S05. Травма глаза и глазницы</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Глюкокортикостероиды</UKMKB_PHGR>
@@ -11164,6 +11181,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Аллопуринол*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">АЛЛОПУРИНОЛ: табл. <CStyleItalic aid:cstyle="CStyleItalic">(Органика АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XX. V01-Y98. Внешние причины заболеваемости и смертности</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XX. V01-Y98</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">W00-X59. Другие внешние причины травм при несчастных случаях</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">W50-W64. Воздействие живых механических сил</UKMKB_LEVEL2>
 <UKMKB_LEVEL3 aid:pstyle="UKMKB_LEVEL3">W57. Укус или ужаливание неядовитым насекомым и другими неядовитыми членистоногими</UKMKB_LEVEL3>
@@ -11337,6 +11355,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Декспантенол*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">Д-ПАНТЕНОЛ: мазь д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XXI. Z00-Z99. Факторы, влияющие на состояние здоровья и обращения в учреждения здравоохранения</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XXI. Z00-Z99</COLONT_Opis>
 <UKMKB_LEVEL1 aid:pstyle="UKMKB_LEVEL1">Z00-Z13. Обращения в учреждения здравоохранения для медицинского осмотра и обследования</UKMKB_LEVEL1>
 <UKMKB_LEVEL2 aid:pstyle="UKMKB_LEVEL2">Z01. Другие специальные осмотры и обследования лиц, не имеющих жалоб или установленного диагноза</UKMKB_LEVEL2>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Антисептики и дезинфицирующие средства</UKMKB_PHGR>
@@ -11819,6 +11838,7 @@
 <UkMKB_DV aid:pstyle="UkMKB_DV">Эстриол</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ОРНИОНА<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: крем ваг. <CStyleItalic aid:cstyle="CStyleItalic">(ВЕРТЕКС АО)</CStyleItalic></UkMKB_TName>
 <UKMKB_LEVEL0 aid:pstyle="UKMKB_LEVEL0">КЛАСС XXII. Z100*. Хирургическая практика</UKMKB_LEVEL0>
+<COLONT_Opis aid:pstyle="COLONT_Opis">КЛАСС XXII. Z100*</COLONT_Opis>
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">H<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-антигистаминные средства</UKMKB_PHGR>
 <UkMKB_DV aid:pstyle="UkMKB_DV">Прометазин*</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ПИПОЛЬФЕН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для в/в и в/м введ. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkMKB_TName>
@@ -11984,5 +12004,4 @@
 <UKMKB_PHGR aid:pstyle="UKMKB_PHGR">Эстрогены, гестагены; их гомологи и антагонисты в комбинациях</UKMKB_PHGR>
 <UkMKB_DV aid:pstyle="UkMKB_DV">Лактобактерии + Прогестерон + Эстриол</UkMKB_DV>
 <UkMKB_TName aid:pstyle="UkMKB_TName">ТРИОЖИНАЛЬ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс. ваг. <CStyleItalic aid:cstyle="CStyleItalic">(Laboratoires Besins International)</CStyleItalic></UkMKB_TName>
-</Story>
-</Root>
+</Chapter> 

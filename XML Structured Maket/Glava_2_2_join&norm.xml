@@ -1,8 +1,7 @@
-<?xml version="1.0"?>
-<Root xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
-<Story>
-<GlSubTitle aid:pstyle="GlSubTitle">2.4. Указатель лекарственных средств и действующих веществ по фармакологическим группам</GlSubTitle>
+<?xml version="1.0" encoding="UTF-8"?>    
+<Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/"><GlSubTitle aid:pstyle="GlSubTitle">2.4. Указатель лекарственных средств и действующих веществ по фармакологическим группам</GlSubTitle>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">1. Вегетотропные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Вегетотропные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">1.1. Адренолитические средства</UkFG_FG2>
 <UkFG_FG3 aid:pstyle="UkFG_FG3">1.1.1. Альфа-адреноблокаторы</UkFG_FG3>
 <UkFG_DV aid:pstyle="UkFG_DV">Доксазозин*</UkFG_DV>
@@ -97,6 +96,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Цитизин</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ТАБЕКС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Sopharma AD)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">2. Гематотропные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Гематотропные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">2.1. Антиагреганты</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Клопидогрел*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ЗИЛТ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(KRKA)</CStyleItalic></UkFG_TName>
@@ -154,6 +154,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Железа сульфат + Аскорбиновая кислота*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">СОРБИФЕР ДУРУЛЕС: табл. п.о. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">3. Гомеопатические средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Гомеопатические средства</COLONT_Opis>
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">АНГИН-ХЕЛЬ СД: табл. д/рассас. гомеопат. <CStyleItalic aid:cstyle="CStyleItalic">(Biologische Heilmittel Heel GmbH)</CStyleItalic></UkFG_TName>
 <UkFG_TName aid:pstyle="UkFG_TName">БЕРБЕРИС-ГОМАККОРД: капли д/приема внутрь гомеопат. <CStyleItalic aid:cstyle="CStyleItalic">(Biologische Heilmittel Heel GmbH)</CStyleItalic></UkFG_TName>
@@ -216,6 +217,7 @@
 <UkFG_TName aid:pstyle="UkFG_TName">ЭУФОРБИУМ КОМПОЗИТУМ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> НАЗЕНТРОПФЕН С: спрей наз. гомеопат. <CStyleItalic aid:cstyle="CStyleItalic">(Biologische Heilmittel Heel GmbH)</CStyleItalic></UkFG_TName>
 <UkFG_TName aid:pstyle="UkFG_TName">ЭХИНАЦЕЯ КОМПОЗИТУМ СН: р-р для в/м введ. гомеопат. <CStyleItalic aid:cstyle="CStyleItalic">(Biologische Heilmittel Heel GmbH)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">4. Гормоны и их антагонисты</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Гормоны и их антагонисты</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">4.1. Андрогены, антиандрогены</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Тестостерон*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">АНДРОГЕЛЬ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: гель д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(Laboratoires Besins International)</CStyleItalic></UkFG_TName>
@@ -346,6 +348,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Левоноргестрел+Этинилэстрадиол и Этинилэстрадиол [набор]</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">МОДЭЛЛЬ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> ЛИБЕРА: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Teva)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">5. Диагностические средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Диагностические средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">5.1. Контрастные средства</UkFG_FG2>
 <UkFG_FG3 aid:pstyle="UkFG_FG3">5.1.1. Рентгеноконтрастные средства</UkFG_FG3>
 <UkFG_DV aid:pstyle="UkFG_DV">Йогексол*</UkFG_DV>
@@ -355,6 +358,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Пентетреотид</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ОКТРЕОТИД, 111 IN: лиоф. д/р-ра для в/в введ. <CStyleItalic aid:cstyle="CStyleItalic">(Фарм-Синтез АО)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">6. Иммунотропные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Иммунотропные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">6.1. Вакцины, сыворотки, фаги и анатоксины</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Вакцина для профилактики дифтерии, столбняка и коклюша</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">АДАСЕЛЬ [ВАКЦИНА ДЛЯ ПРОФИЛАКТИКИ ДИФТЕРИИ (С УМЕНЬШЕННЫМ СОДЕРЖАНИЕМ АНТИГЕНА), СТОЛБНЯКА И КОКЛЮША (БЕСКЛЕТОЧНАЯ), КОМБИНИРОВАННАЯ, АДСОРБИРОВАННАЯ]: сусп. для в/м введ. <CStyleItalic aid:cstyle="CStyleItalic">(Представительство Акционерного общества «Санофи-авентис груп»)</CStyleItalic></UkFG_TName>
@@ -406,6 +410,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">ТОНЗИЛГОН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> Н: драже; капли для приема внутрь <CStyleItalic aid:cstyle="CStyleItalic">(Bionorica SE)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">7. Интермедианты</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Интермедианты</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">7.1. Агонисты I<CStyleSubscript aid:cstyle="CStyleSubscript">1</CStyleSubscript>-имидазолиновых рецепторов</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Моксонидин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">МОКСАРЕЛ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(ВЕРТЕКС АО)</CStyleItalic></UkFG_TName>
@@ -531,6 +536,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Эплеренон*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ИНСПРА<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Пфайзер ООО)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">8. Метаболики</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Метаболики</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">8.1. Анаболики</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Инозин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ИНОЗИЕ-Ф: р-р для в/в введ. <CStyleItalic aid:cstyle="CStyleItalic">(Europharm (UK) Co.)</CStyleItalic></UkFG_TName>
@@ -726,6 +732,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">ЭСЛИДИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс. <CStyleItalic aid:cstyle="CStyleItalic">(STADA)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">9. Нейротропные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Нейротропные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">9.1. Анксиолитики</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Алпразолам*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">АЛПРАЗОЛАМ: табл. <CStyleItalic aid:cstyle="CStyleItalic">(Органика АО)</CStyleItalic></UkFG_TName>
@@ -931,6 +938,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Цитиколин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">РЕКОГНАН: р-р для в/в и в/м введ.; р-р для приема внутрь <CStyleItalic aid:cstyle="CStyleItalic">(ГЕРОФАРМ)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">10. Ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Ненаркотические анальгетики, включая нестероидные и другие противовоспалительные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">10.1. НПВС — Производные салициловой кислоты</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Месалазин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">САЛОФАЛЬК: гран. п.о. кишечнораствор. пролонг.; пена рект. доз.; супп. рект.; сусп. рект.; табл. п.о. кишечнораствор. <CStyleItalic aid:cstyle="CStyleItalic">(Doctor Falk Pharma GmbH)</CStyleItalic></UkFG_TName>
@@ -1018,6 +1026,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">АНТИГРИППИН-АНВИ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс./комплект <CStyleItalic aid:cstyle="CStyleItalic">(Сотекс ФармФирма)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">11. Органотропные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Органотропные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">11.1. Дерматотропные средства</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Алклометазон*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">АФЛОДЕРМ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: крем д/наружн. прим.; мазь д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(BELUPO d.d.)</CStyleItalic></UkFG_TName>
@@ -1467,6 +1476,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">МУЛЬТИ-ГИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> АКТИГЕЛЬ: гель ваг. <CStyleItalic aid:cstyle="CStyleItalic">(Фарм-Синтез АО)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">12. Противомикробные, противопаразитарные и противоглистные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Противомикробные, противопаразитарные и противоглистные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">12.1. Антибиотики</UkFG_FG2>
 <UkFG_FG3 aid:pstyle="UkFG_FG3">12.1.1. Аминогликозиды</UkFG_FG3>
 <UkFG_FG4 aid:pstyle="UkFG_FG4">12.1.1.1. Аминогликозиды в комбинациях</UkFG_FG4>
@@ -1623,6 +1633,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">УМКАЛОР: р-р для приема внутрь <CStyleItalic aid:cstyle="CStyleItalic">(Dr. Willmar Schwabe)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">13. Противоопухолевые средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Противоопухолевые средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">13.1. Антиметаболиты</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Капецитабин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">КАБЕЦИН: табл. п.п.о. <CStyleItalic aid:cstyle="CStyleItalic">(Фарм-Синтез АО)</CStyleItalic></UkFG_TName>
@@ -1650,6 +1661,7 @@
 <UkFG_DV aid:pstyle="UkFG_DV">Эрибулин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ХАЛАВЕН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: р-р для в/в введ. <CStyleItalic aid:cstyle="CStyleItalic">(Eisai Europe Limited)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">14. Регенеранты и репаранты</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Регенеранты и репаранты</COLONT_Opis>
 <UkFG_DV aid:pstyle="UkFG_DV">Декспантенол*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">Д-ПАНТЕНОЛ: крем д/наружн. прим.; мазь д/наружн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(EGIS Pharmaceuticals PLC)</CStyleItalic></UkFG_TName>
 <UkFG_DV aid:pstyle="UkFG_DV">Маточное молочко</UkFG_DV>
@@ -1663,6 +1675,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">РЕЛИФ<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript> УЛЬТРА: супп. рект. <CStyleItalic aid:cstyle="CStyleItalic">(Bayer AG, Division Consumer Health)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">15. Биологически активные добавки к пище (БАДы)</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Биологически активные добавки к пище (БАДы)</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">15.1. БАДы — белки, аминокислоты и их производные</UkFG_FG2>
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">АРНЕБИЯ L-КАРНИТИН: капс. <CStyleItalic aid:cstyle="CStyleItalic">(Nutrilo GmbH)</CStyleItalic></UkFG_TName>
@@ -1762,6 +1775,7 @@
 <UkFG_NODV aid:pstyle="UkFG_NODV"><CStyleBoldItalic aid:cstyle="CStyleBoldItalic">Другие препараты</CStyleBoldItalic></UkFG_NODV>
 <UkFG_TName aid:pstyle="UkFG_TName">БАКТИСТАТИН<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: капс. <CStyleItalic aid:cstyle="CStyleItalic">(STADA)</CStyleItalic></UkFG_TName>
 <UkFG_FG1 aid:pstyle="UkFG_FG1">16. Разные средства</UkFG_FG1>
+<COLONT_Opis aid:pstyle="COLONT_Opis">Разные средства</COLONT_Opis>
 <UkFG_FG2 aid:pstyle="UkFG_FG2">16.1. Средства для коррекции нарушений при алкоголизме, токсико- и наркомании</UkFG_FG2>
 <UkFG_DV aid:pstyle="UkFG_DV">Варениклин*</UkFG_DV>
 <UkFG_TName aid:pstyle="UkFG_TName">ЧАМПИКС<CStyleSuperscript aid:cstyle="CStyleSuperscript">®</CStyleSuperscript>: табл. п.п.о./комплект <CStyleItalic aid:cstyle="CStyleItalic">(Пфайзер Инновации ООО)</CStyleItalic></UkFG_TName>
@@ -1786,6 +1800,4 @@
 <UkFG_TName aid:pstyle="UkFG_TName">ФЕРМАТРОН С ПРОТЕЗ СИНОВИАЛЬНОЙ ЖИДКОСТИ <CStyleItalic aid:cstyle="CStyleItalic">(Система Плюс АО)</CStyleItalic></UkFG_TName>
 <UkFG_TName aid:pstyle="UkFG_TName">ФОРЕТАЛЬ: крем <CStyleItalic aid:cstyle="CStyleItalic">(STADA)</CStyleItalic></UkFG_TName>
 <UkFG_TName aid:pstyle="UkFG_TName">ЭСТРОГИАЛ КРЕМ ДЛЯ ИНТИМНОЙ ГИГИЕНЫ ДОЗИРОВАННЫЙ: крем д/местн. прим. <CStyleItalic aid:cstyle="CStyleItalic">(Иммунохелп Фарма НПО ООО)</CStyleItalic></UkFG_TName>
-<OPIS_END aid:pstyle="OPIS_END"/>
-</Story>
-</Root>
+<OPIS_END aid:pstyle="OPIS_END"/></Chapter> 

@@ -59,7 +59,7 @@
             <COLONT_UKPR xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="COLONT_UKPR">
                 <xsl:analyze-string select="." regex="([^(]+)(\s+\(.+\))">
                     <xsl:matching-substring>
-                        <xsl:value-of select="regex-group(1)"/>
+                        <xsl:value-of select="regex-group(1)"/> <!-- Выбираем первую группу символов - те, которые стоят до открывающей круглой скобки -->
                     </xsl:matching-substring>
                 </xsl:analyze-string>
             </COLONT_UKPR> <!-- для формирования колонтитулов в макете по значениям абзацев со стилями, проверяемыми во сравнении, добавляется дублирующий абзац со стилем COLONT_UKPR -->
