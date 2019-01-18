@@ -5,10 +5,12 @@
         xpath-default-namespace="http://www.w3.org/1999/xhtml"
     version="2.0">
     <!-- Версия 2.1 завершающий тег </OPIS> ставится перед открывающимся, если описание не первое -->
-    <!-- Ширина большинства таблиц задается здесь в пунктах -->
-    <!--Версия 2.2 Генерация дополнительного абзаца COLONT_ после  для формирования колонтитулов в макете
+     <!--Версия 2.2 Генерация дополнительного абзаца COLONT_ после  для формирования колонтитулов в макете
     происходит с применением регулярного выражения (только в xslt 2.0) -->
+    <!-- Ширина большинства таблиц задается здесь в пунктах -->    
     <xsl:param name="table-width">161.575</xsl:param>
+    <xsl:param name="pictures-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Pictures/</xsl:param>
+    <xsl:param name="struf-DV-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
 
 
     <xsl:template match="body">
@@ -106,12 +108,12 @@
             <xsl:choose>
                 <xsl:when test="@vent"> <!-- теги с атрибутом vent содержат рисунки, связанные с применением препарата -->
                     <xsl:value-of 
-                        select="concat('C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/ENCIKLOP%20InDesign/Pictures/', substring-before(@src, '.jpg'), '.eps')"/>
+                        select="concat($pictures-folder, substring-before(@src, '.jpg'), '.eps')"/>
                         <!-- первый аргумент concat содержит URI-ссылку на папку, содержащую рисунки -->
                 </xsl:when>
                 <xsl:otherwise> <!-- теги без атрибута vent обычно содержат структурные формулы-->
                     <xsl:value-of
-                        select="concat('C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/ENCIKLOP%20InDesign/Struf_DV/', substring-before(substring-after(@src, '\\DISKSTATION\NetBackup\BOOK\Struf_DV\'), '.gif'), '.tif')"
+                        select="concat($struf-DV-folder, substring-before(substring-after(@src, '\\DISKSTATION\NetBackup\BOOK\Struf_DV\'), '.gif'), '.tif')"
                     />
                 </xsl:otherwise>
             </xsl:choose>
