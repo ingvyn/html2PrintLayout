@@ -16,7 +16,8 @@
     происходит с применением регулярного выражения (только в xslt 2.0)
     -->
     
-
+    <xsl:param name="logo-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Logo/</xsl:param>
+    
     <xsl:template match="body">
         <xsl:text>&#xA;</xsl:text>
         <Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
@@ -74,7 +75,7 @@
     
     <xsl:template match="img"> <!-- обработка тегов со ссылками на рисунки: html-описания содержат рисунки 2-х типов -рисунки, связанные с применением препарата, и структурные формулы действующих веществ -->
         <xsl:variable name="uriimg">
-             <xsl:value-of select="concat('C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/ENCIKLOP%20InDesign/Logo/', substring-before(@src, '.gif'), '.eps')"/>
+             <xsl:value-of select="concat($logo-folder, substring-before(@src, '.gif'), '.eps')"/>
                         <!-- первый аргумент concat содержит URI-ссылку на папку, содержащую рисунки -->
 
         </xsl:variable>
