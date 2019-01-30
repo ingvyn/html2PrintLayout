@@ -1,9 +1,9 @@
 ﻿//DESCRIPTION: Сохраняет каждую страничку - будущий "кирпич" как eps. Имя файла забираем из параграфа со стилем PageNum
-// Script name.jsx
+// KirpichExport2Eps.jsx
 //
-// Modified XXXX-XX-XX
-// Your Name, Your Company
-// Your web site URL
+// Modified 2019-01-25
+// Igor Nikitin
+
 //
 // List of things required for the script to run
 
@@ -17,20 +17,19 @@ function Main() {
 	if (app.documents.length > 0) {
 		var myDoc = app.documents[0];
         var myAllPages = [];
-        var myCPTFrames = [];
-        var myCTFTexts = [];
+        var myCPTFrame;
         var myCTParagraphs = [];
         var style2Find;
-        var currEPSPath = "C:/Users/иникитин/Documents/ENCIKLOP InDesign/TransformingHTML2_xml/Identifyer/";
+        var currEPSPath = myDoc.filePath.absoluteURI; // полный путь к открытому файлу InDesign
+//        var currEPSPath = "C:/Users/иникитин/Documents/ENCIKLOP InDesign/TransformingHTML2_xml/Identifyer";
 //		получаем массив страниц		
         myAllPages = myDoc.pages;
        for (var i=0; i<myAllPages.length; i++) {
+           myEps2Export = null;
 //			на каждой странице берем массив текстовых фреймов. В нашем случае нам с наибольшей вероятностью нужен первый текстовый фрейм		   
-           myCPTFrames = myAllPages[i].textFrames[0];
-//		   с текстового фрейма забираем массив текстов. В нашем случае с наибольшей вероятностью в первом элементе массива находится текст с параграфом, имеющий нужный стиль PageNum
-           myCTFTexts = myCPTFrames.texts[0];
+           myCPTFrame = myAllPages[i].textFrames[0];
 // 			получаем массив параграфов		   
-           myCTParagraphs = myCTFTexts.paragraphs;
+           myCTParagraphs = myCPTFrame.paragraphs;
            for (var parnum=0; parnum<myCTParagraphs.length; parnum++) {
 //				присваиваем переменной имя каждого параграфа			   
                style2Find = myCTParagraphs[parnum].appliedParagraphStyle.name;
@@ -40,8 +39,8 @@ function Main() {
 // 					считываем содержимое параграфа, очищая его от лишних знаков в конце строки (перевод строки и пр.)				   
                    file_ofPageNum = myCTParagraphs[parnum].contents.split(/\s/);
 // 					создаем объект типа File по предварительно заданному пути + содержимое параграфа (набор цифр)	
-                    myCPTFrames.createOutlines;
-                   myEps2Export = new File (currEPSPath + file_ofPageNum[0] + ".eps");
+//                    myCPTFrame.createOutlines;
+                   myEps2Export = new File (currEPSPath + "/" + file_ofPageNum[0] + ".eps");
 //                    alert(myDoc.filePath);
 //                   alert(myCTParagraphs[parnum].contents); 
                }
@@ -50,12 +49,14 @@ function Main() {
                 try {
                     app.selection[0].createOutlines(true); 
                 } catch (e) {continue;}
+                
            }
 //		задаем настройки экспорта eps, указывая диапазон страниц для экспорта 
-            app.epsExportPreferences.pageRange = String(i+1);
+            if (myEps2Export != null) {
+                app.epsExportPreferences.pageRange = String(i+1);
 //	    выполняем экспорт документа с заданными настройками экспорта				   
-            myDoc.exportFile (ExportFormat.EPS_TYPE, myEps2Export);           
-       
+                myDoc.exportFile (ExportFormat.EPS_TYPE, myEps2Export);
+                };
         }
 
 	}
