@@ -1,0 +1,24 @@
+FontName (PetersburgCO-BoldItalic)
+FullName (PetersburgCO Bold Italic)
+AppleName (PetersburgCO-BoldItalic)
+FamilyName (PetersburgCO)
+Version (001.000)
+isFixedPitch false
+CharacterSet (cyrillicit.cs)
+Encoding (cyrillic.enc)
+Pi true
+ItalicAngle -16
+CapHeight 970
+UnderlinePosition -100
+UnderlineThickness 50
+StemWidth 123
+Serif false
+AppleName (PetersburgCO)
+MSMenuName (PetersburgCO)
+VPMenuName (PetersburgCO)
+WORDMenuName (PetersburgCO)
+AppleFONDID 128
+VPStyle (T)
+WindowsCharSet 204
+WindowsFirstChar 32
+WindowsLastChar 255
