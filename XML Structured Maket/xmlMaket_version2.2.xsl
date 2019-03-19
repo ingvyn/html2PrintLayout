@@ -9,8 +9,8 @@
     происходит с применением регулярного выражения (только в xslt 2.0) -->
     <!-- Ширина большинства таблиц задается здесь в пунктах -->    
     <xsl:param name="table-width">161.575</xsl:param>
-    <xsl:param name="pictures-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Pictures/</xsl:param>
-    <xsl:param name="struf-DV-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
+    <xsl:param name="pictures-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Pictures/</xsl:param>
+    <xsl:param name="struf-DV-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
 
 
     <xsl:template match="body">
