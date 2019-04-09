@@ -16,7 +16,7 @@
     происходит с применением регулярного выражения (только в xslt 2.0)
     -->
     
-    <xsl:param name="logo-folder">C:/Users/%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD/Documents/Enciklopediya_2020/Logo/</xsl:param>
+    <xsl:param name="logo-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Logo/</xsl:param>
     
     <xsl:template match="body">
         <xsl:text>&#xA;</xsl:text>
@@ -153,19 +153,19 @@
     
     <xsl:template match="a[@href]" mode="character-style-range">   <!-- шаблон обрабатывает одиночные и последовательные цепочки тегов <a>, каждый из которых может быть заключен в стилевые inline теги  -->
         <xsl:param name="inherited-character-style" select="''"/>
-        <xsl:variable name="curr-paragraph-context" select="ancestor::p"/>
+        <xsl:variable name="curr-paragraph-context-id" select="generate-id(ancestor::p[1])"/>
         <xsl:choose> <!-- шаблон настроен на концепцию обработки тегов ссылок, которые при трансформации в xml приводятся в соответствующие теги xml, а с учетом отображения в макете добавляются 
                       наполнители 0000 для будущих перекрестных ссылок и знаки препинания; запускаемый в макете скрипт путем поиска ссылочных тегов с одинаковыми аттрибутами href и name актуализирует перекрестные ссылки-->
-            <xsl:when test="not(preceding::a[ancestor::p=$curr-paragraph-context])">
+            <xsl:when test="not(preceding::a[generate-id(ancestor::p[1])=$curr-paragraph-context-id])"> <!-- если нет предшествующих тегов <a..> под общим первым предком p, идентичность которого проверяется с помощью generate-id()-->
                 <xsl:text>&#x09;</xsl:text> <!-- добавляется табуляция, если ссылочный тег первый в цепочке (внимание: каждый ссылочный тег может быть внутри стилевого тега b, i etc.)  -->
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose> <!-- код для вставки знаков препинания перед оставшимися после первого в цепочке ссылочных тегов -->
-                    <xsl:when test="count(preceding::a[ancestor::p=$curr-paragraph-context]) mod 2 = 1">
+                    <xsl:when test="count(preceding::a[generate-id(ancestor::p[1])=$curr-paragraph-context-id]) mod 2 = 1">
                         <xsl:text>&#x2C;&#x20;</xsl:text> <!-- запятая с пробелом, если предыдущих ссылочных тегов нечетное количество -->                        
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:text>&#xA;</xsl:text> <!-- перевод строки, если предыдущих ссылочных тегов четное количество -->
+                        <xsl:text>&#x2C;&#xA;</xsl:text> <!-- запятая с переводом строки, если предыдущих ссылочных тегов четное количество -->
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
