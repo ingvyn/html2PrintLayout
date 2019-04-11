@@ -4,6 +4,7 @@
     exclude-result-prefixes="xs"
         xpath-default-namespace="http://www.w3.org/1999/xhtml"
     version="2.0">
+    <xsl:strip-space elements="*"/> <!-- Инструкция удаляет все пробельные узлы из исходного дерева xhtml -->
     <!-- Версия 2.1 завершающий тег </OPIS> ставится перед открывающимся, если описание не первое -->
      <!--Версия 2.2 Генерация дополнительного абзаца COLONT_ после  для формирования колонтитулов в макете
     происходит с применением регулярного выражения (только в xslt 2.0) -->
@@ -18,7 +19,7 @@
         <Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
             <xsl:apply-templates select="*"/>
             <!-- Ставится принудительно закрывающийся тег </OPIS> перед закрывающимся тегом </Chapter> для зхакрытия последнего описания раздела 1.5 главы 1-->
-            <xsl:if test="child::p[@class='OPIS_LARGETON' or @class='Opis_DV_Opis']">
+            <xsl:if test="descendant::p[@class='OPIS_LARGETON' or @class='Opis_DV_Opis']">
                 <xsl:text disable-output-escaping="yes"><![CDATA[</OPIS>]]></xsl:text>
             </xsl:if>
         </Chapter>

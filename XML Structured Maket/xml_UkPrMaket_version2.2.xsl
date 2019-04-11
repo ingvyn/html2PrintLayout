@@ -15,7 +15,7 @@
     Версия 2.2 Генерация дополнительного абзаца COLONT_UKPR после UKPR_F_NAME для формирования колонтитулов в макете
     происходит с применением регулярного выражения (только в xslt 2.0)
     -->
-    
+    <xsl:strip-space elements="*"/> <!-- Инструкция удаляет все пробельные узлы из исходного дерева xhtml -->
     <xsl:param name="logo-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Logo/</xsl:param>
     
     <xsl:template match="body">
