@@ -54,6 +54,8 @@ function Main() {
 //		задаем настройки экспорта eps, указывая диапазон страниц для экспорта 
             if (myEps2Export != null) {
                 app.epsExportPreferences.pageRange = String(i+1);
+// для совместимости  экспортируемых eps c Corel Ventura  на первых стадиях работы в InDesign формат экспорта двоичный
+                app.epsExportPreferences.dataFormat = DataFormat.BINARY;
 //	    выполняем экспорт документа с заданными настройками экспорта				   
                 myDoc.exportFile (ExportFormat.EPS_TYPE, myEps2Export);
                 };
