@@ -5,9 +5,9 @@
     <xsl:output method="xml"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
-        <Identifier xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <IdentCollection xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
             <xsl:apply-templates/>
-        </Identifier>
+        </IdentCollection>
     </xsl:template>
     <xsl:template match="Ident">
         <xsl:copy>
