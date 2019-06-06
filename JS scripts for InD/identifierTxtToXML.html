@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <title>Identifier.txt to xml converter</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!--##################START HERE#####################-->
+
+        <!-- FORM -->
+        <form>
+
+            <!-- TEXTAREA -->
+            <div class="form-group">
+                <label for="txt"></label>
+                <textarea class="form-control" id="contents" rows="20"></textarea>
+            </div>
+
+            <!-- CUSTOM FILE INPUT -->
+            <div class="custom-file">
+                <input type="file" id="myfile" class="custom-file-input" onchange='onChooseFile(event, onFileLoad.bind(this, "contents"))'>
+                <label class="custom-file-label" for="myfile">Выберите для загрузки файл</label>
+            </div>
+            <br>
+            <br>
+            <br>                        
+            <div class="form-group">
+                <label for="xml"></label>
+                <textarea class="form-control" id="output" rows="20"></textarea>
+            </div>
+        </form>
+        <script type="text/javascript">
+            function onFileLoad(elementId, event) {
+                var tmp_string = event.target.result;
+                
+ /*               document.getElementById(elementId).innerText = decodeURI(tmp_string.split("").map(function(ch) { return "%"+ch.charCodeAt(0).toString(16);}).join(""));
+ */
+                document.getElementById(elementId).innerText = tmp_string;
+                sourceTxt = document.getElementById(elementId).value;
+                convertToXML(sourceTxt);
+            }
+
+            function onChooseFile(event, onLoadFileHandler) {
+                if (typeof window.FileReader !== 'function')
+                    throw ("The file API isn't supported on this browser.");
+                let input = event.target;
+                if (!input)
+                    throw ("The browser does not properly implement the event object");
+                if (!input.files)
+                    throw ("This browser does not support the `files` property of the file input.");
+                if (!input.files[0])
+                    return undefined;
+                let file = input.files[0];
+                let fr = new FileReader();
+                fr.onload = onLoadFileHandler;
+                fr.readAsText(file, 'windows-1251');
+            }
+
+            function convertToXML(source) {
+                var linesSource = source.split('@');
+                var outputXML = '<?xml version="1.0" encoding="UTF-8"?>\u{000A}<IdentCollection xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">';
+                var selectTag, selectValue;
+                var kirpichEnd = false;
+                for (var x = 0; x < linesSource.length; x++) {
+                    selectTag = linesSource[x].substr(0, linesSource[x].indexOf(' =')); // пробел со знаком равно
+                    selectValue = linesSource[x].substring(linesSource[x].indexOf('= ') + 2);
+                    if (!selectTag) continue;
+                    if (selectTag === 'Z_STYLE70') {
+                        outputXML = outputXML + '<Ident>';
+                        continue;
+                    }
+                    if (kirpichEnd) {
+                        outputXML = outputXML + '\u{000A}<Ident>';
+                        kirpichEnd = false;
+                    }
+                    outputXML = outputXML + `<${selectTag} aid:pstyle="${selectTag}"`;                    
+                    switch(selectTag) {
+                        case 'Logof':
+                            outputXML = outputXML + ` href="T:\\VenturaOut\\ENCIKLOP\\CurrYear\\IDENT_LOGOF\\${selectValue}"></${selectTag}>`;
+                            break;
+                        case 'Picture':
+                            outputXML = outputXML + ` href="${selectValue}"></${selectTag}>`;
+                        break;
+                        default:
+                            if (selectTag === 'TorgNazv') {
+                                kirpichEnd = true;
+                            }
+                            outputXML = outputXML + `>${corelTagsConverter(selectValue)}</${selectTag}>`
+                    }
+                    if (kirpichEnd) {
+                        outputXML = outputXML + '</Ident>';
+                    } else {
+                        outputXML = outputXML + '\u{000A}'                        
+                    }
+                }
+                outputXML = outputXML + '</IdentCollection>'                                    
+                document.getElementById('output').value = outputXML;
+            }
+            
+            function corelTagsConverter(s) {
+                var regexp = /<([^<>]+)>([^<>]+)<([^<>]+)>/g; //ищет строки типа <^>....<^*>
+                if (regexp.test(s)) {
+                    return s.replace(regexp, (str, in1stAngles, btwnAngles, in2ndAngles) => {
+                        switch (in1stAngles) {
+                            case '^':
+                                if (in2ndAngles === '^*')  {
+                                return `<CStyleSuperscript aid:cstyle="CStyleSuperscript">${btwnAngles}</CStyleSuperscript>`;
+                                }
+                            // place for other 'cases' in case there is a need for converting other tags
+                        }
+                    });
+                } else return s;
+
+            }
+
+            </script>
+         
+</body>
+
+</html>
