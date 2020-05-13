@@ -12,6 +12,8 @@
     <xsl:param name="table-width">161.575</xsl:param>
     <xsl:param name="pictures-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Pictures/</xsl:param>
     <xsl:param name="struf-DV-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
+    <xsl:param name="source-struf-folder">\\DISKSTATION\NetBackup\12-Общая\BOOK\Struf_DV\</xsl:param> <!-- переменная для сверки пути к папке с структурными формулами в выводе html. В выводимом html приводится полный путь, если он вдруг поменялся - переменную надо обновить-->    
+    
 
 
     <xsl:template match="body">
@@ -114,7 +116,7 @@
                 </xsl:when>
                 <xsl:otherwise> <!-- теги без атрибута vent обычно содержат структурные формулы-->
                     <xsl:value-of
-                        select="concat($struf-DV-folder, substring-before(substring-after(@src, '\\DISKSTATION\NetBackup\BOOK\Struf_DV\'), '.gif'), '.tif')"
+                        select="concat($struf-DV-folder, substring-before(substring-after(@src, $source-struf-folder), '.gif'), '.tif')"
                     />
                 </xsl:otherwise>
             </xsl:choose>
