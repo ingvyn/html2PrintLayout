@@ -1,38 +1,47 @@
-<!ENTITY mdash "&#x2014;">
-<!ENTITY ndash "&#x2013;">
-<!ENTITY nbsp "&#xA0;">
-<!ENTITY reg "&#xAE;">
-<!ENTITY bull "&#x2022;">
-<!ENTITY deg "&#xB0;">
-<!ENTITY laquo "&#xAB;">
-<!ENTITY raquo "&#xBB;">
-<!ENTITY ge "&#x2265;">
-<!ENTITY lt "&#x3C;">
-<!ENTITY shy "&#xAD;">
-<!ENTITY acute "&#xB4;">
-<!ENTITY sect "&#xA7;">
-<!ENTITY plusmn "&#xB1;">
-<!ENTITY frac12 "&#xBD;">
-<!ENTITY times "&#xD7;">
-<!ENTITY alpha "&#x3B1;">
-<!ENTITY beta "&#x3B2;">
-<!ENTITY gamma "&#x3B3;">
-<!ENTITY delta "&#x3B4;">
-<!ENTITY kappa "&#x3BA;">
-<!ENTITY lambda "&#x3BB;">
-<!ENTITY mu "&#x3BC;">
-<!ENTITY sigma "&#x3C3;">
-<!ENTITY tau "&#x3C4;">
-<!ENTITY midot "&#xB7;">
-<!ENTITY oacute "&#xF3;">
-<!ENTITY le "&#x2264;">
-<!ENTITY uml "&#xA8;">
-<!ENTITY minus "&#x2212;">
-<!ENTITY Delta "&#x394;">
-<!ENTITY trade "&#x2122;">
-<!ENTITY cent "&#xA2;">
-<!ENTITY ldquo "&#xAB;">
-<!ENTITY rdquo "&#xBB;">
-<!ENTITY infin "&#x221E;">
-<!ENTITY aacute "&#xE1;">
-<!ENTITY rsquo "&#x2019;">
+<!ENTITY mdash "&#x2014;"> <!-- длинное тире - есть в базовых шрифтах -->
+<!ENTITY ndash "&#x2013;"> <!--  короткое тире - есть в базовых шрифтах-->
+<!ENTITY nbsp "&#xA0;"> <!-- неразрывный пробел -->
+<!ENTITY reg "&#xAE;"> <!-- зарегистрированная торговая марка -->
+<!ENTITY bull "&#x2022;"> <!-- бюллет есть на поз hex 2022 в коллекции используемых шрифтов PetersburgC и HeliosCond  -->
+<!ENTITY deg "&#xB0;"> <!-- знак градуса,  есть в базовых шрифтах и в коллекции используемых шрифтов -->
+<!ENTITY laquo "&#xAB;"> <!-- знак <->   - "двусторонняя горизонтальная стрелка" в шрифте Symbol -->
+<!ENTITY raquo "&#xBB;"> <!-- знак - "приблизительно равно" в шрифте Symbol -->
+<!ENTITY ge "<font face='Symbol'>&#xB3;</font>"> <!-- знак ≥ (unicode2265)  -->
+<!ENTITY le "<font face='Symbol'>&#xA3;</font>"> <!-- знак ≤ (unicode2264)  -->
+<!ENTITY gt "<font face='Symbol'>&#x3E;</font>"> <!-- знак > больше есть в базовых шрифтах - для единообразия с ≥ заимствуем из Symbol -->
+<!ENTITY lt "<font face='Symbol'>&#x3C;</font>"> <!-- знак < больше есть в базовых шрифтах - для единообразия с ≤ заимствуем из Symbol  -->
+<!ENTITY shy "&#xAD;"> <!-- мягкий перенос, не уверен, используется ли  -->
+<!ENTITY acute "<font face='SymbolRLS'>&#x83;</font>"> <!-- ударение с кернингом смещением вправо -->
+<!ENTITY sect "&#xA7;"> <!-- спец. символ "кленовый лист" — старый символ для отображения препарата безрецептурного отпуска; сущность возникает при нормализации html вывода с тегами уже определяющими использование шрифта Symbol <font face="Symbol" >&sect;</font> (хотя в Symbol это скорее трилистник). Для соответствия с версткой в вентуре  следовало бы <font face="SymbolRLS">&#x38;</font>-->
+<!ENTITY plusmn "&#xB1;"> <!-- знак ± (плюс-минус) есть в коллекции используемых шрифтов -->
+<!ENTITY frac12 "<font face='SymbolRLS'>&#xBD;</font>"> <!-- единый знак дроби "одна вторая" ½, использовали раньше, в современных описаниях используют 1/2 -->
+<!ENTITY frac34 "<font face='SymbolRLS'>&#xBE;</font>"> <!-- единый знак дроби "три четверти" ¾, использовали раньше, в современных описаниях используют 3/4 -->
+<!ENTITY times "<font face='Symbol'>&#xB4;</font>"> <!-- знак умножения (unicodeD7) нет в не Unicode шрифтах с русским алфавитом. при переходе на unicode шрифт можно осавить просто родную кодировку D7 без заимствований из другого шрифта-->
+<!ENTITY alpha "<font face='Symbol'>&#x61;</font>"> <!--  греч. альфа (unicode3B1) нет в не Unicode шрифтах-->
+<!ENTITY beta "<font face='Symbol'>&#x62;</font>"> <!--  греч. альфа (unicode3B2) нет в не Unicode шрифтах-->
+<!ENTITY gamma "<font face='Symbol'>&#x67;</font>"> <!--  греч. гамма (unicode3B3) нет в не Unicode шрифтах-->
+<!ENTITY delta "<font face='Symbol'>&#x64;</font>"> <!--  греч. дельта (unicode3B4) нет в не Unicode шрифтах-->
+<!ENTITY kappa "<font face='Symbol'>&#x6B;</font>"> <!--  греч. дельта (unicode3BA) нет в не Unicode шрифтах-->
+<!ENTITY lambda "<font face='Symbol'>&#x6C;</font>"> <!--  греч. дельта (unicode3BB) нет в не Unicode шрифтах-->
+<!ENTITY mu "<font face='Symbol'>&#x6D;</font>"> <!--  греч. мю (unicode3BС) нет в не Unicode шрифтах-->
+<!ENTITY sigma "<font face='Symbol'>&#x73;</font>"> <!--  греч. сигма (unicode3C3) нет в не Unicode шрифтах-->
+<!ENTITY tau "<font face='Symbol'>&#x74;</font>"> <!--  греч. сигма (unicode3C4) нет в не Unicode шрифтах-->
+<!ENTITY midot "&#xB7;"> <!-- знак · (middle dot) есть в коллекции используемых шрифтов -->
+<!ENTITY oacute "<font face='SymbolRLS'>&#x83;</font>о"> <!-- "о"  с ударением (unicodeF3): определяется как "о" из базового шрифта с ударением из SymbolRLS -->
+<!ENTITY uml "&#xA8;"> <!-- спец. символ ромб в описаниях; сущность возникает при нормализации html вывода с тегами уже определяющими использование шрифта Symbol <font face="Symbol">&uml;</font>. Хотя для соответствия с версткой в вентуре  следовало бы <font face="SymbolRLS">&#xA9;</font> или что тоже <font face="SymbolRLS">&copy;</font>-->
+<!ENTITY minus "<font face='Symbol'>&#x2D;</font>"> <!-- спец. символ "минус" (среднепротяженный, не короткий unicode2212) -->
+<!ENTITY Delta "<font face='Symbol'>&#x44;</font>"> <!-- греч. заглавная Дельта (unicode394) нет в не Unicode шрифтах   -->
+<!ENTITY trade "<font face='Symbol'>&#xD4;</font>"> <!--  товарный знак "TM" нет в не Unicode шрифтах  (unicode2122)-->
+<!ENTITY cent "&#xA2;"> <!--  -->
+<!ENTITY ldquo "&#xAB;"> <!-- двойная левая кавычка в тексте заменяется на угловую левую кавычку &laquo  -->
+<!ENTITY rdquo "&#xBB;"> <!-- двойная правая кавычка в тексте заменяется на угловую правую кавычку &raquo  -->
+<!ENTITY infin "<font face='Symbol'>&#xA5;</font>"> <!-- знак бесконечности; нет в не Unicode шрифтах (unicode221E)  -->
+<!ENTITY aacute "<font face='SymbolRLS'>&#x83;</font>а"> <!--  "а"  с ударением (unicodeE1): определяется как "а" из базового шрифта с ударением из SymbolRLS  -->
+<!ENTITY uarr "<font face='Symbol'>&#xAD;</font>"> <!-- стрелка вверх (unicode 2191); нет в не Unicode шрифтах  -->
+<!ENTITY darr "<font face='Symbol'>&#xAF;</font>"> <!-- стрелка вверх (unicode 2193); нет в не Unicode шрифтах  -->
+<!ENTITY harr "<font face='Symbol'>&#xAB;</font>"> <!-- стрелка вверх (unicode 2194); нет в не Unicode шрифтах  -->
+<!ENTITY rsquo "&#x2019;"> <!--  -->
+<!ENTITY lsquo "&#x2018;"> <!--  -->
+
+<!-- Сущности после коррекции вывода спецсимволов в выводе html для отображения их исключительно символами шрифта SymbolRLS -->
+<!ENTITY copy "&#xA9;"> <!-- символ для отображения формы, имеющей цветное изображение в «Идентификаторе»  -->
