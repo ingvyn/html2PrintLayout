@@ -10,7 +10,7 @@
         происходит с применением регулярного выражения (только в xslt 2.0) -->
     <!-- Ширина большинства таблиц задается здесь в пунктах -->    
     <xsl:param name="table-width">161.575</xsl:param>
-    <xsl:param name="pictures-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Pictures/</xsl:param>
+    <xsl:param name="pictures-folder">N:/Pictures/Vent/</xsl:param>
     <xsl:param name="struf-DV-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
     <xsl:param name="source-struf-folder">\\DISKSTATION\NetBackup\12-Общая\BOOK\Struf_DV\</xsl:param> <!-- переменная для сверки пути к папке с структурными формулами в выводе html. В выводимом html приводится полный путь, если он вдруг поменялся - переменную надо обновить-->    
     
@@ -180,6 +180,25 @@
             </xsl:with-param>        
         </xsl:apply-templates>
     </xsl:template>
+
+    <xsl:template match="span[@style]" mode="character-style-range">
+        <xsl:param name="inherited-character-style" select="''"/>
+        <xsl:variable name="font-face">
+            <xsl:value-of select="substring-before(substring-after(@style, 'font-family:'), ';')"/>
+        </xsl:variable>
+        <xsl:apply-templates select="* | text()" mode="character-style-range">
+            <xsl:with-param name="inherited-character-style">
+                <xsl:choose>
+                    <xsl:when test="contains($font-face, ' ')">
+                        <xsl:value-of select="replace($font-face, ' ', '')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="@face"/> 
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:with-param>        
+        </xsl:apply-templates>
+    </xsl:template>
     
     <xsl:template match="strong | b" mode="character-style-range">
         <xsl:param name="inherited-character-style" select="''"/>
@@ -256,7 +275,7 @@
     <!-- Обработка таблиц -->
     <xsl:template match="table">
         <xsl:choose>
-            <xsl:when test="@tab_name"> <!-- обработка всех именованных таблиц. Обычно находятся внутри полей описания, но не в поле СОСТАВ -->
+            <xsl:when test="@tab_name or @border"> <!-- обработка всех именованных таблиц. Обычно находятся внутри полей описания, также добавляется обработка таблиц, видимость которых установлена атрибутом border -->
                 <xsl:variable name="BodyRowCount" select="count(descendant::tr)"/>
                 <xsl:variable name="td-number-in-first-row"
                     select="count(descendant::tr[position()=1]/td)"/>
