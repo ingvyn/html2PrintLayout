@@ -16,7 +16,7 @@
     происходит с применением регулярного выражения (только в xslt 2.0)
     -->
     <xsl:strip-space elements="*"/> <!-- Инструкция удаляет все пробельные узлы из исходного дерева xhtml -->
-    <xsl:param name="logo-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Logo/</xsl:param>
+    <xsl:param name="logo-folder">N:/Pictures/LOGOFIRMS/eps/</xsl:param>
     
     <xsl:template match="body">
         <xsl:text>&#xA;</xsl:text>
@@ -129,6 +129,25 @@
                 <xsl:choose>
                     <xsl:when test="contains(@face, ' ')">
                         <xsl:value-of select="replace(@face, ' ', '')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="@face"/> 
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:with-param>        
+        </xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="span[@style]" mode="character-style-range">
+        <xsl:param name="inherited-character-style" select="''"/>
+        <xsl:variable name="font-face">
+            <xsl:value-of select="substring-before(substring-after(@style, 'font-family:'), ';')"/>
+        </xsl:variable>
+        <xsl:apply-templates select="* | text()" mode="character-style-range">
+            <xsl:with-param name="inherited-character-style">
+                <xsl:choose>
+                    <xsl:when test="contains($font-face, ' ')">
+                        <xsl:value-of select="replace($font-face, ' ', '')"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="@face"/> 

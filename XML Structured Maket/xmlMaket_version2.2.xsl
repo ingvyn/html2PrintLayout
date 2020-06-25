@@ -275,7 +275,7 @@
     <!-- Обработка таблиц -->
     <xsl:template match="table">
         <xsl:choose>
-            <xsl:when test="@tab_name or @border"> <!-- обработка всех именованных таблиц. Обычно находятся внутри полей описания, также добавляется обработка таблиц, видимость которых установлена атрибутом border -->
+            <xsl:when test="@tab_name or @border='1'"> <!-- обработка всех именованных таблиц. Обычно находятся внутри полей описания, также добавляется обработка таблиц, видимость которых установлена атрибутом border -->
                 <xsl:variable name="BodyRowCount" select="count(descendant::tr)"/>
                 <xsl:variable name="td-number-in-first-row"
                     select="count(descendant::tr[position()=1]/td)"/>
