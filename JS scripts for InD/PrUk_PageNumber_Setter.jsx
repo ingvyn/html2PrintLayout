@@ -22,7 +22,7 @@ function Main() {
                 'Puk_Preparat_PageNumberOnly',
                 'PUK_DVName_PageNumberOnly'
             ],
-            whatFind: "^\\d+(,\\s*.*)?" // GREP-запрос для поиска (цифры (после, возможно, запятая, пробел, опять цифры) возможен повтор )
+            whatFind: "^[^{0-9A-ZА-Я\\-\\+\\[\\]()}]" // Хотел использовать GREP-запрос для поиска (цифры (после, возможно, запятая, пробел, опять цифры) возможен повтор ) ^\\d+(,\\s*.*)? . Но здесь нужен поиск маркера перкрестной ссылки - не нашел такой возможности в grep поиске Indesign, поэтому буду искать от обратного - абзацы не начинающие как привычно для данного стиля
         };
         app.findGrepPreferences = NothingEnum.NOTHING;
         app.findChangeGrepOptions.includeMasterPages = false;
