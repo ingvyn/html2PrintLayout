@@ -11,7 +11,7 @@
     <!-- Ширина большинства таблиц задается здесь в пунктах -->    
     <xsl:param name="table-width">161.575</xsl:param>
     <xsl:param name="pictures-folder">N:/Pictures/Vent/</xsl:param>
-    <xsl:param name="struf-DV-folder">C:/Users/i.nikitin/Documents/Enciklopediya_2020/Struf_DV/</xsl:param>
+    <xsl:param name="struf-DV-folder">N:/Pictures/FORMULADV/tif/</xsl:param>
     <xsl:param name="source-struf-folder">\\DISKSTATION\NetBackup\12-Общая\BOOK\Struf_DV\</xsl:param> <!-- переменная для сверки пути к папке с структурными формулами в выводе html. В выводимом html приводится полный путь, если он вдруг поменялся - переменную надо обновить-->    
     
     
@@ -155,7 +155,7 @@
             </xsl:with-param>        
         </xsl:apply-templates>
     </xsl:template>
-    
+
     <xsl:template match="span[@class]" mode="character-style-range">
         <xsl:param name="inherited-character-style" select="''"/>
         <xsl:apply-templates select="* | text()" mode="character-style-range">
@@ -196,6 +196,15 @@
                         <xsl:value-of select="@face"/> 
                     </xsl:otherwise>
                 </xsl:choose>
+            </xsl:with-param>        
+        </xsl:apply-templates>
+    </xsl:template>
+    
+    <xsl:template match="u" mode="character-style-range">
+        <xsl:param name="inherited-character-style" select="''"/>
+        <xsl:apply-templates select="* | text()" mode="character-style-range">
+            <xsl:with-param name="inherited-character-style">
+                <xsl:value-of select="concat($inherited-character-style, 'Underline')"/>     
             </xsl:with-param>        
         </xsl:apply-templates>
     </xsl:template>

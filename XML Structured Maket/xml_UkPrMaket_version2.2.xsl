@@ -16,7 +16,7 @@
     происходит с применением регулярного выражения (только в xslt 2.0)
     -->
     <xsl:strip-space elements="*"/> <!-- Инструкция удаляет все пробельные узлы из исходного дерева xhtml -->
-    <xsl:param name="logo-folder">N:/Pictures/LOGOFIRMS/eps/</xsl:param>
+    <xsl:param name="logo-folder">C:/enc2021/</xsl:param>
     
     <xsl:template match="body">
         <xsl:text>&#xA;</xsl:text>
@@ -153,6 +153,15 @@
                         <xsl:value-of select="@face"/> 
                     </xsl:otherwise>
                 </xsl:choose>
+            </xsl:with-param>        
+        </xsl:apply-templates>
+    </xsl:template>
+    
+    <xsl:template match="u" mode="character-style-range">
+        <xsl:param name="inherited-character-style" select="''"/>
+        <xsl:apply-templates select="* | text()" mode="character-style-range">
+            <xsl:with-param name="inherited-character-style">
+                <xsl:value-of select="concat($inherited-character-style, 'Underline')"/>     
             </xsl:with-param>        
         </xsl:apply-templates>
     </xsl:template>
