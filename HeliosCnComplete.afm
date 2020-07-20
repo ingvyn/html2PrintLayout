@@ -19,7 +19,7 @@ UnderlineThickness 58
 StdHW 64
 StdVW 76
 EncodingScheme AdobeStandardCyrillic
-StartCharMetrics 225
+StartCharMetrics 228
 C 0 ; WX 0 ; N .null ; B 0 0 0 0 ;
 C 13 ; WX 240 ; N CR ; B 0 0 0 0 ;
 C 32 ; WX 240 ; N space ; B 0 0 0 0 ;
@@ -243,6 +243,9 @@ C -1 ; WX 424 ; N afii10110 ; B 15 -182 419 707 ;
 C -1 ; WX 584 ; N afii10145 ; B 75 -168 509 720 ;
 C -1 ; WX 480 ; N afii10193 ; B 70 -145 410 534 ;
 C -1 ; WX 844 ; N afii61352 ; B 70 0 824 720 ;
+C -1 ; WX 1042 ; N arrowboth ; B 20 -14 1022 499 ;
+C -1 ; WX 616 ; N arrowdown ; B 45 -14 558 900 ;
+C -1 ; WX 603 ; N arrowup ; B 45 -14 558 900 ;
 C -1 ; WX 334 ; N hyphenminus ; B 42 210 292 278 ;
 C -1 ; WX 549 ; N minus ; B 18 233 531 281 ;
 EndCharMetrics
