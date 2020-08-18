@@ -22,8 +22,12 @@
         <xsl:text>&#xA;</xsl:text>
         <Chapter xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/">
             <xsl:apply-templates select="*"/>
-            <!-- Ставится принудительно закрывающийся тег </UKPR> перед закрывающимся тегом </Chapter> для зхакрытия последнего описания фирмы-->
-            <xsl:text disable-output-escaping="yes"><![CDATA[</UKPR>]]></xsl:text>            
+            <!-- Если в обрабатываемом файле есть абзацы с классом UKPR_F_NAME, перед закрывающимся тегом </Chapter> ставится принудительно закрывающийся тег </UKPR> для закрытия последнего описания фирмы-->
+            <xsl:choose>
+                <xsl:when test="descendant::p[@class='UKPR_F_NAME']">
+                    <xsl:text disable-output-escaping="yes"><![CDATA[</UKPR>]]></xsl:text> 
+                </xsl:when>
+            </xsl:choose>           
         </Chapter>
     </xsl:template>
     
@@ -73,7 +77,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="img"> <!-- обработка тегов со ссылками на рисунки: html-описания содержат рисунки 2-х типов -рисунки, связанные с применением препарата, и структурные формулы действующих веществ -->
+    <xsl:template match="img"> <!-- обработка тегов со ссылками на логотипы -->
         <xsl:variable name="uriimg">
              <xsl:value-of select="concat($logo-folder, substring-before(@src, '.gif'), '.eps')"/>
                         <!-- первый аргумент concat содержит URI-ссылку на папку, содержащую рисунки -->
@@ -236,6 +240,14 @@
                 <xsl:text disable-output-escaping="yes"><![CDATA[</]]></xsl:text><xsl:value-of select="concat('CStyle', $inherited-character-style)"/><xsl:text disable-output-escaping="yes"><![CDATA[>]]></xsl:text>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="img" mode="character-style-range"> <!-- обработка рисунков, стоящих внутри тега p вместе с текстом - привязанных к абзацу Inline рисунков  -->
+        <xsl:variable name="uriimg">
+            <xsl:value-of select="concat($logo-folder, substring-before(@src, '.gif'), '.eps')"/>
+            <!-- первый аргумент concat содержит URI-ссылку на папку, содержащую логотипы -->
+        </xsl:variable>
+        <Image href="file:///{$uriimg}"/>
     </xsl:template>
 
 <!-- Обработка таблиц -->
