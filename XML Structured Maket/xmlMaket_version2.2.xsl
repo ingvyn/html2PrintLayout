@@ -35,14 +35,19 @@
         <xsl:if test="@class='OPIS_LARGETON' or @class='Opis_DV_Opis'">
             <xsl:choose>
                 <xsl:when test="preceding-sibling::p[@class='OPIS_LARGETON' or @class='Opis_DV_Opis']">
-                    <!-- Закрывается тег </OPIS> и открывается новый <OPIS> для всех описаний кроме первого, когда встечается класс OPIS_LARGETON или Opis_DV_Opis -->
-                    <xsl:text disable-output-escaping="yes"><![CDATA[</OPIS>]]></xsl:text>
-                    <xsl:text>&#xA;</xsl:text>
-                    <xsl:text disable-output-escaping="yes"><![CDATA[<OPIS>]]></xsl:text>
+                    <xsl:choose>
+                        <xsl:when test="name(preceding-sibling::*[1])='hr'">
+                            <!-- По условиям двух пред. when в случае, если до абазаца с классом Opis* еще были такие абзацы и первый предыдущий sibling - <hr>, используемый для завершения описания -->
+                            <!-- закрывается тег </OPIS> и открывается новый <OPIS> для всех описаний кроме первого, когда встечается класс OPIS_LARGETON или Opis_DV_Opis -->
+                            <xsl:text disable-output-escaping="yes"><![CDATA[</OPIS>]]></xsl:text>
+                            <xsl:text>&#xA;</xsl:text>
+                            <xsl:text disable-output-escaping="yes"><![CDATA[<OPIS>]]></xsl:text>                            
+                        </xsl:when>
+                    </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
                     <!-- Открывается тег <OPIS> для первого описания -->
-                    <xsl:text disable-output-escaping="yes"><![CDATA[<OPIS>]]></xsl:text>                    
+                    <xsl:text disable-output-escaping="yes"><![CDATA[<OPIS>]]></xsl:text>                              
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if> 
@@ -219,7 +224,11 @@
     </xsl:template>
     
     <xsl:template match="br" mode="character-style-range">
-        <xsl:text>&#xA;</xsl:text>
+        <xsl:choose>
+            <xsl:when test="count(following-sibling::*) &gt; 0"> <!-- только если после br еще есть текст или другие элементы, простирающиеся до закрытого тега p, добавляется перевод строки. А то в базе есть случаи, когда br стоит перед закрытым p-->
+                <xsl:text>&#xA;</xsl:text>                
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="a[@href]" mode="character-style-range">   <!-- шаблон обрабатывает одиночные и последовательные цепочки тегов <a>, каждый из которых может быть заключен в стилевые inline теги  -->
@@ -418,17 +427,24 @@
                             <xsl:when test="child::td[position() = 1]/p/@class">
                                 <xsl:value-of select="child::td[position() = 1]/p/@class"/>
                             </xsl:when>
+                            <!-- В случае если первая ячейка никоим образом не содержит значение никакого класса, что характерно для строк таблицы с пробельным значением компонента состава и непустым значением количества компонента,используется значение класса, определенного во второй ячейке -->
+                            <xsl:when test="child::td[position() = 2]/@class">
+                                <xsl:value-of select="child::td[position() = 2]/@class"/>
+                            </xsl:when>
+                            <xsl:when test="child::td[position() = 2]/p/@class">
+                                <xsl:value-of select="child::td[position() = 2]/p/@class"/>
+                            </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="'Table_Left'"/>
+                                <xsl:value-of select="CompSost_Val"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <xsl:variable name="cell1-is-empty" select="child::td[1]"/> <!-- В дальнейшем осуществляется проверка на непустоту первой и второй ячейки строки -->
-                    <xsl:variable name="cell2-is-empty" select="child::td[2]"/> <!-- по текущему состоянию входного xhtml ячейка считается пустой, если содержит только элемент &nbsp; (неразрывный пробел)-->
+                    <xsl:variable name="cell1-is-empty" select="normalize-space(child::td[1])"/> <!-- В дальнейшем осуществляется проверка на непустоту первой и второй ячейки строки -->
+                    <xsl:variable name="cell2-is-empty" select="normalize-space(child::td[2])"/> <!-- по текущему состоянию входного xhtml ячейка считается пустой, если содержит только элемент &nbsp; (неразрывный пробел)-->
                     <xsl:text disable-output-escaping="yes"><![CDATA[<]]></xsl:text><xsl:value-of select="$get-para-style"/><xsl:text> aid:pstyle="</xsl:text><xsl:value-of select="$get-para-style"/><xsl:text>"</xsl:text><xsl:text disable-output-escaping="yes"><![CDATA[>]]></xsl:text>
-                    <xsl:if test="$cell1-is-empty != '&#xA0;'"> <!-- сравнение на &nbsp; (неразрывный пробел) A0 hex-code &nbsp; -->
+                    <xsl:if test="$cell1-is-empty != '&#xA0;' and $cell1-is-empty != ''"> <!-- сравнение на пустую ячейку, включая ранее использовавшийся &nbsp; (неразрывный пробел) A0 hex-code &nbsp; -->
                         <xsl:apply-templates select="child::td[position() = 1]" mode="character-style-range"/>
-                        <xsl:if test="$cell2-is-empty != '&#xA0;'">
+                        <xsl:if test="$cell2-is-empty != '&#xA0;' and $cell2-is-empty != ''">
                             <xsl:copy-of select="'&#x9;'"/> <!-- если вторая ячейка пуста, в нашем макете добавляется табуляция для отточия -->
                         </xsl:if>
                     </xsl:if>
