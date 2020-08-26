@@ -292,7 +292,7 @@
 
     <xsl:template match="img" mode="character-style-range"> <!-- обработка рисунков, стоящих внутри тега p вместе с текстом - привязанных к абзацу Inline рисунков  -->
         <xsl:variable name="uriimg">
-            <xsl:value-of select="concat($pictures-folder, substring-before(@src, '.gif'), '.eps')"/>
+            <xsl:value-of select="concat($pictures-folder, substring-before(@src, '.jpg'), '.eps')"/>
             <!-- первый аргумент concat содержит URI-ссылку на папку, содержащую логотипы -->
         </xsl:variable>
         <Image href="file:///{$uriimg}"/>
