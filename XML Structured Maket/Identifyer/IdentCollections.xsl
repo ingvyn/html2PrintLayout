@@ -17,7 +17,7 @@
             <xsl:text>&#xA;</xsl:text>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="Firma1 | PageNum | LekForm">
+    <xsl:template match="Firma1 | LekForm">
         <xsl:copy>
             <xsl:attribute name="aid:pstyle">
                 <xsl:value-of select="name()"/>
@@ -26,6 +26,24 @@
         </xsl:copy>
         <xsl:text>&#xA;</xsl:text>
     </xsl:template>
+    <xsl:template match="PageNum">
+        <xsl:copy>
+            <xsl:attribute name="aid:pstyle">
+                <xsl:choose> <!-- в макете стиль абзаца PageNum всегда начинается с новой полосы, а pagenum в любом месте -->
+                             <!-- для окон с названием фирмы и логотипом ставим pagenum, а для прсотых окон PageNum, т.к. этот абзац идет первым -->
+                    <xsl:when test="name(preceding-sibling::*[1])='Firma1' or name(preceding-sibling::*[1])='Logof'">
+                        <xsl:value-of select="'pagenum'"/>     <!-- не забывайте, что без одиночных кавычек процессор будет искать узлы с именем pagenum -->                   
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'PageNum'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates select="text() | *" mode="character-style-range"/>
+        </xsl:copy>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>    
+
     <xsl:template match="TorgNazv">
         <xsl:copy>
             <xsl:attribute name="aid:pstyle">
