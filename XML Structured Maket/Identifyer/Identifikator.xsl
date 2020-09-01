@@ -4,6 +4,7 @@
     exclude-result-prefixes="xs"
     version="1.0">
     <xsl:output method="xml"/>
+    <xsl:param name="ident-folder">file:///T:/VenturaOut/ENCIKLOP\CurrYear/Kirpichi_All/</xsl:param> <!-- параметр с местонахождением папки "кирпичей" -->
     <xsl:template match="/">
         <xsl:text>&#xA;</xsl:text>
         <Identifikator>
@@ -13,17 +14,21 @@
     <xsl:template match="Graphics">
         <Ident>
             <xsl:text>&#xA;</xsl:text>
-            <xsl:copy>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="concat('file:///T:/VenturaOut/ENCIKLOP\CurrYear/Kirpichi_All/', text())"/>
+            <xsl:copy> <!-- в выходной файл переносится тег Graphics -->
+                <xsl:attribute name="href"> <!-- атрибуту href тега присваивается имя файла eps с путем -->
+                    <xsl:value-of select="concat($ident-folder, text())"/>
                 </xsl:attribute>            
             </xsl:copy>
             <xsl:text>&#xA;</xsl:text>
-            <xsl:choose>
+            <xsl:choose> <!-- по наличию в теге Graphics атрибутa href формируется дочерний тег с соответствующим атрибутом -->
                 <xsl:when test="@href">
                     <crossRef href="{@href}">c. 0000</crossRef>
                     <xsl:text>&#xA;</xsl:text>
                 </xsl:when>
+                <xsl:when test="@name">
+                    <anchorCR name="{@name}"/>
+                    <xsl:text>&#xA;</xsl:text>
+                </xsl:when>                
             </xsl:choose>
         </Ident>
     </xsl:template>
