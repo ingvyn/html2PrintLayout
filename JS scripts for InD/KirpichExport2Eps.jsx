@@ -36,8 +36,8 @@ function Main() {
 //				делаем проверку имени параграфа на соответствие нужному PageNum			   
                if (style2Find == "PageNum" || style2Find == "pagenum"){
                    var file_ofPageNum = [];
-// 					считываем содержимое параграфа, очищая его от лишних знаков в конце строки (перевод строки и пр.)				   
-                   file_ofPageNum = myCTParagraphs[parnum].contents.split(/\s/);
+// 					считываем содержимое параграфа, очищая его от лишних знаков - в начале строки непечатные символы InDesign, в конце перевод строки и проч.)				   
+                   file_ofPageNum = myCTParagraphs[parnum].contents.match(/\d+/);
 // 					создаем объект типа File по предварительно заданному пути + содержимое параграфа (набор цифр)	
 //                    myCPTFrame.createOutlines;
                    myEps2Export = new File (currEPSPath + "/" + file_ofPageNum[0] + ".eps");
@@ -56,6 +56,10 @@ function Main() {
                 app.epsExportPreferences.pageRange = String(i+1);
 // для совместимости  экспортируемых eps c Corel Ventura  на первых стадиях работы в InDesign формат экспорта двоичный
                 app.epsExportPreferences.dataFormat = DataFormat.BINARY;
+                app.epsExportPreferences.postscriptLevel = PostScriptLevels.LEVEL_2;
+                app.epsExportPreferences.preview = PreviewTypes.TIFF_PREVIEW;
+                app.epsExportPreferences.epsColor = EPSColorSpace.CMYK;
+                app.epsExportPreferences.fontEmbedding = FontEmbedding.SUBSET;
 //	    выполняем экспорт документа с заданными настройками экспорта				   
                 myDoc.exportFile (ExportFormat.EPS_TYPE, myEps2Export);
                 };
