@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <title>Identifier.txt to xml converter</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!--##################START HERE#####################-->
+
+        <!-- FORM -->
+        <form>
+
+            <!-- TEXTAREA -->
+            <div class="form-group">
+                <label for="txt"></label>
+                <textarea class="form-control" id="contents" rows="20"></textarea>
+            </div>
+
+            <!-- CUSTOM FILE INPUT -->
+            <div class="custom-file m-4 col-5">
+                <input type="file" id="myfile1" class="custom-file-input" onchange='onChooseFile(event, onIdentifikatorLoad.bind(this, "contents"))'>
+                <label class="custom-file-label" for="myfile1">Выберите для загрузки файл Identifier.txt</label>
+            </div>
+
+            <div class="custom-file m-4 col-5">
+              <input type="file" id="myfile2" class="custom-file-input" onchange='onChooseFile(event, onWindlistLoad.bind(this, "contents"))'>
+              <label class="custom-file-label" for="myfile2">Выберите для загрузки файл Windlist.txt</label>
+            </div>            
+            <br>
+            <br>
+            <br>                        
+            <div class="form-group">
+                <label for="xml"></label>
+                <textarea class="form-control" id="output" rows="20"></textarea>
+            </div>
+        </form>
+        <script type="text/javascript">
+            function onIdentifikatorLoad(elementId, event) {
+                var tmp_string = event.target.result;
+                
+ /*               document.getElementById(elementId).innerText = decodeURI(tmp_string.split("").map(function(ch) { return "%"+ch.charCodeAt(0).toString(16);}).join(""));
+ */
+                document.getElementById(elementId).innerText = tmp_string;
+                sourceTxt = document.getElementById(elementId).value;
+                convertIdentifikatorToXML(sourceTxt);
+            }
+
+            function onWindlistLoad(elementId, event) {
+                var tmp_string = event.target.result;
+                
+ /*               document.getElementById(elementId).innerText = decodeURI(tmp_string.split("").map(function(ch) { return "%"+ch.charCodeAt(0).toString(16);}).join(""));
+ */
+                document.getElementById(elementId).innerText = tmp_string;
+                sourceTxt = document.getElementById(elementId).value;
+                convertWindlistToXML(sourceTxt);
+            }
+
+            function onChooseFile(event, onLoadFileHandler) {
+                if (typeof window.FileReader !== 'function')
+                    throw ("The file API isn't supported on this browser.");
+                let input = event.target;
+                if (!input)
+                    throw ("The browser does not properly implement the event object");
+                if (!input.files)
+                    throw ("This browser does not support the `files` property of the file input.");
+                if (!input.files[0])
+                    return undefined;
+                let file = input.files[0];
+                let fr = new FileReader();
+                fr.onload = onLoadFileHandler;
+                fr.readAsText(file, 'windows-1251');
+            }
+
+            function convertIdentifikatorToXML(source) {
+                var linesSource = source.split('@');
+                var outputXML = '<IdentCollection>\u{000A}';
+                var selectTag, selectValue;
+                var kirpichEnd = false;
+                for (var x = 0; x < linesSource.length; x++) {
+                    selectTag = linesSource[x].substr(0, linesSource[x].indexOf('=')).trim(); // пробел со знаком равно
+                    selectValue = linesSource[x].substring(linesSource[x].indexOf('=') + 1).trim();
+                    if (!selectTag) continue;
+                    if (selectTag === 'Z_STYLE70') {
+                        outputXML = outputXML + '<Ident>\u{000A}';
+                        continue;
+                    }
+                    if (kirpichEnd) {
+                        outputXML = outputXML + '<Ident>\u{000A}';
+                        kirpichEnd = false;
+                    }
+                    outputXML = outputXML + `\u{0009}<${selectTag}>${corelTagsConverter(selectValue)}</${selectTag}>\u{000A}`;                    
+                    if (selectTag === 'TorgNazv') {
+                        outputXML = outputXML + '</Ident>\u{000A}';
+                        kirpichEnd = true;
+                    }
+                }
+                outputXML = outputXML + '</IdentCollection>'                                    
+                document.getElementById('output').value = outputXML;
+            }
+
+            function convertWindlistToXML(source) {
+                var linesSource = source.substring(source.indexOf('=') + 1).trim().split('.eps');
+                var outputXML = '<Identifikator>\u{000A}';
+                for (var x = 0; x < linesSource.length; x++) {
+                    outputXML = linesSource[x].length ? outputXML + `\u{0009}<Graphics>${linesSource[x]}.eps</Graphics>\u{000A}` : outputXML;                    
+                }
+                outputXML = outputXML + '</Identifikator>'                                    
+                document.getElementById('output').value = outputXML;
+            }
+
+            function corelTagsConverter(s) {
+                var regexp = /<([^<>]+)>([^<>]+)<([^<>]+)>/g; //ищет строки типа <^>....<^*>
+                if (regexp.test(s)) {
+                    return s.replace(regexp, (str, in1stAngles, btwnAngles, in2ndAngles) => {
+                        switch (in1stAngles) {
+                            case '^':
+                                if (in2ndAngles === '^*')  {
+                                return `<sup>${btwnAngles}</sup>`;
+                                }
+                            // place for other 'cases' in case there is a need for converting other tags
+                        }
+                    });
+                } else return s;
+
+            }
+
+            </script>
+         
+</body>
+
+</html>
