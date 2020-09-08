@@ -9,9 +9,11 @@
 
 //Main();
 // If you want the script to be un-doable, comment out the line above, and remove the comment from the line below
-app.doScript(Main, undefined, undefined, UndoModes.ENTIRE_SCRIPT,"Run Script");
+app.doScript(Export, undefined, undefined, UndoModes.ENTIRE_SCRIPT,"Export pages to Eps");
+app.activeDocument.undo(); //отмена действий, произведенных в документе и необходимых для экспорта, но не желательных в сохраненном документе - перевода текста в окнах в кривые
+//при этом экспорт файлов уже состоялся, а это все, что требовалось выполнить в скрипте
 
-function Main() {
+function Export() {
 	// Check to see whether any InDesign documents are open.
 	// If no documents are open, display an error message.
 	if (app.documents.length > 0) {
