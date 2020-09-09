@@ -1,6 +1,6 @@
 StartFontMetrics 2.0
 Comment UniqueID 5049105
-Comment Panose 2 0 5 3 8 0 0 2 0 2
+Comment Panose 2 0 5 3 8 0 0 2 0 3
 FullName PetersburgCO Regular
 FontName PetersburgCO-Regular
 FamilyName PetersburgCO
@@ -9,16 +9,16 @@ Version 001.000
 IsFixedPitch false
 ItalicAngle 0.00
 FontBBox -167 -224 1120 945
-Ascender 700
-Descender -250
+Ascender 780
+Descender -214
 XHeight 462
-CapHeight 945
+CapHeight 700
 UnderlinePosition -100
 UnderlineThickness 50
 StdHW 22
 StdVW 76
 EncodingScheme FontSpecific
-StartCharMetrics 332
+StartCharMetrics 335
 C 32 ; WX 233 ; N space ; B 0 0 0 0 ;
 C 33 ; WX 310 ; N exclam ; B 100 -15 210 714 ;
 C 34 ; WX 400 ; N quotedbl ; B 70 500 330 700 ;
@@ -146,8 +146,11 @@ C 182 ; WX 584 ; N paragraph ; B 42 -214 542 700 ;
 C 183 ; WX 233 ; N periodcentered ; B 62 215 170 323 ;
 C 187 ; WX 526 ; N guillemotright ; B 60 0 466 462 ;
 C 215 ; WX 549 ; N multiply ; B 59 41 490 471 ;
+C 228 ; WX 468 ; N adieresis ; B 32 -11 462 642 ;
 C 243 ; WX 519 ; N oacute ; B 35 -11 485 654 ;
+C 246 ; WX 520 ; N odieresis ; B 36 -11 484 633 ;
 C 247 ; WX 549 ; N divide ; B 18 45 531 466 ;
+C 252 ; WX 557 ; N udieresis ; B 22 -11 525 642 ;
 C -1 ; WX 722 ; N Alpha ; B 10 0 713 677 ;
 C -1 ; WX 667 ; N Beta ; B 17 0 612 662 ;
 C -1 ; WX 722 ; N Chi ; B 9 0 712 662 ;
@@ -352,267 +355,4 @@ C -1 ; WX 576 ; N upsilon ; B 35 -15 521 460 ;
 C -1 ; WX 493 ; N xi ; B 44 -216 466 694 ;
 C -1 ; WX 494 ; N zeta ; B 44 -220 469 691 ;
 EndCharMetrics
-StartKernData
-StartKernPairs 233
-KPX quotedbl A -50
-
-KPX quotesingle A -50
-
-KPX A quotedbl -70
-KPX A quotesingle -70
-KPX A asterisk -157
-KPX A C -73
-KPX A G -74
-KPX A O -77
-KPX A Q -77
-KPX A T -54
-KPX A V -169
-KPX A W -165
-KPX A Y -61
-KPX A v -76
-KPX A w -70
-KPX A y -78
-KPX A quoteright -120
-KPX A quotedblright -127
-KPX A trademark -171
-
-KPX B V -29
-KPX B W -29
-KPX B Y -29
-
-KPX D V -74
-KPX D W -77
-KPX D Y -108
-
-KPX F comma -145
-KPX F period -146
-KPX F colon -36
-KPX F semicolon -40
-KPX F A -148
-KPX F a -30
-KPX F c -21
-KPX F d -20
-KPX F e -16
-KPX F g -25
-KPX F o -17
-KPX F q -18
-KPX F s -19
-KPX F ellipsis -177
-
-KPX J A -90
-
-KPX K C -107
-KPX K G -113
-KPX K O -109
-KPX K Q -109
-KPX K v -92
-KPX K w -77
-KPX K y -101
-
-KPX L quotedbl -50
-KPX L quotesingle -50
-KPX L asterisk -256
-KPX L C -90
-KPX L G -90
-KPX L O -90
-KPX L Q -90
-KPX L T -71
-KPX L V -145
-KPX L W -128
-KPX L Y -78
-KPX L v -39
-KPX L w -27
-KPX L y -47
-KPX L quoteright -127
-KPX L quotedblright -189
-KPX L trademark -120
-
-KPX O A -91
-KPX O V -77
-KPX O W -78
-KPX O X -90
-KPX O Y -100
-
-KPX P comma -152
-KPX P period -140
-KPX P A -142
-KPX P J -70
-KPX P a -60
-KPX P ellipsis -140
-
-KPX Q A -91
-KPX Q V -77
-KPX Q W -78
-KPX Q X -90
-KPX Q Y -100
-
-KPX T comma -106
-KPX T period -96
-KPX T colon -96
-KPX T semicolon -111
-KPX T A -67
-KPX T a -89
-KPX T c -120
-KPX T d -120
-KPX T e -120
-KPX T g -75
-KPX T m -65
-KPX T n -65
-KPX T o -120
-KPX T p -130
-KPX T q -120
-KPX T r -65
-KPX T s -73
-KPX T t -90
-KPX T u -130
-KPX T v -140
-KPX T w -140
-KPX T x -90
-KPX T y -110
-KPX T z -100
-KPX T ellipsis -96
-
-KPX U A -125
-
-KPX V comma -134
-KPX V period -135
-KPX V colon -89
-KPX V semicolon -93
-KPX V A -205
-KPX V C -102
-KPX V G -100
-KPX V O -101
-KPX V Q -100
-KPX V S -2
-KPX V a -97
-KPX V c -128
-KPX V d -128
-KPX V e -128
-KPX V g -112
-KPX V m -55
-KPX V n -55
-KPX V o -125
-KPX V p -45
-KPX V q -129
-KPX V r -55
-KPX V s -96
-KPX V t -33
-KPX V u -45
-KPX V v -28
-KPX V w -28
-KPX V x -38
-KPX V y -30
-KPX V z -68
-KPX V ellipsis -135
-
-KPX W comma -134
-KPX W period -135
-KPX W colon -95
-KPX W semicolon -99
-KPX W A -205
-KPX W C -108
-KPX W G -107
-KPX W O -107
-KPX W Q -107
-KPX W S -2
-KPX W a -103
-KPX W c -130
-KPX W d -130
-KPX W e -131
-KPX W g -116
-KPX W i -80
-KPX W m -61
-KPX W n -61
-KPX W o -129
-KPX W p -51
-KPX W q -131
-KPX W r -61
-KPX W s -101
-KPX W t -39
-KPX W u -51
-KPX W v -34
-KPX W w -34
-KPX W x -44
-KPX W y -36
-KPX W z -74
-KPX W ellipsis -135
-
-KPX X C -90
-KPX X G -90
-KPX X O -90
-KPX X Q -90
-KPX X v -112
-KPX X w -97
-KPX X y -121
-
-KPX Y comma -129
-KPX Y period -119
-KPX Y colon -119
-KPX Y semicolon -129
-KPX Y A -90
-KPX Y C -114
-KPX Y G -128
-KPX Y O -116
-KPX Y Q -117
-KPX Y S -2
-KPX Y a -112
-KPX Y c -186
-KPX Y d -182
-KPX Y e -174
-KPX Y g -98
-KPX Y m -88
-KPX Y n -88
-KPX Y o -175
-KPX Y p -82
-KPX Y q -182
-KPX Y r -88
-KPX Y s -96
-KPX Y t -66
-KPX Y u -82
-KPX Y v -61
-KPX Y w -61
-KPX Y x -71
-KPX Y y -63
-KPX Y z -78
-KPX Y ellipsis -119
-
-KPX Z C -17
-KPX Z G -29
-KPX Z O -21
-KPX Z Q -21
-KPX Z v -56
-KPX Z w -56
-KPX Z y -58
-
-KPX a T -110
-KPX a W -120
-
-KPX r comma -51
-KPX r period -35
-KPX r ellipsis -35
-
-KPX v comma -119
-KPX v period -126
-KPX v c -12
-KPX v d -2
-KPX v ellipsis -130
-
-KPX w comma -107
-KPX w period -118
-KPX w c -5
-KPX w d -2
-KPX w ellipsis -118
-
-KPX y comma -105
-KPX y period -116
-KPX y c -1
-KPX y q -2
-KPX y ellipsis -116
-
-KPX quoteleft A -147
-
-KPX quotedblleft A -176
-
-EndKernPairs
-EndKernData
 EndFontMetrics
