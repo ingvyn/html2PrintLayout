@@ -225,7 +225,7 @@
     
     <xsl:template match="br" mode="character-style-range">
         <xsl:choose>
-            <xsl:when test="count(following-sibling::*) &gt; 0"> <!-- только если после br еще есть текст или другие элементы, простирающиеся до закрытого тега p, добавляется перевод строки. А то в базе есть случаи, когда br стоит перед закрытым p-->
+            <xsl:when test="count(following-sibling::text()) &gt; 0"> <!-- только если после br еще есть текст или другие элементы, простирающиеся до закрытого тега p, добавляется перевод строки. А то в базе есть случаи, когда br стоит перед закрытым p-->
                 <xsl:text>&#xA;</xsl:text>                
             </xsl:when>
         </xsl:choose>
