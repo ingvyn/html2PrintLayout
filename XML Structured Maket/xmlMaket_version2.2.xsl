@@ -111,6 +111,18 @@
         <xsl:text>&#xA;</xsl:text>
     </xsl:template>
     
+    <xsl:template match="p[not(@class)]">
+        <BaseFont xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" aid:pstyle="BaseFont">
+            <xsl:apply-templates select="text() | *" mode="character-style-range"/>
+        </BaseFont>
+        <xsl:choose>
+            <xsl:when test="following-sibling::p or following-sibling::img">
+                <!-- в частности, перевод строки в формирующемся xml не должен вставляться перед закрывающим тегом Cell, в разбираемомо html соотв. </td> -->
+                <xsl:text>&#xA;</xsl:text>
+            </xsl:when>
+        </xsl:choose>        
+    </xsl:template>
+    
     <xsl:template match="img"> <!-- обработка тегов со ссылками на рисунки: html-описания содержат рисунки 2-х типов -рисунки, связанные с применением препарата, и структурные формулы действующих веществ -->
         <xsl:variable name="uriimg">
             <xsl:choose>

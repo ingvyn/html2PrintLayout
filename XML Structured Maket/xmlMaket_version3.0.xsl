@@ -85,6 +85,18 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="p[not(@class)]" mode="#all">
+        <BaseFont xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" aid:pstyle="BaseFont">
+            <xsl:apply-templates select="text() | *" mode="character-style-range"/>
+        </BaseFont>
+        <xsl:choose>
+            <xsl:when test="following-sibling::p or following-sibling::img">
+                <!-- в частности, перевод строки в формирующемся xml не должен вставляться перед закрывающим тегом Cell, в разбираемомо html соотв. </td> -->
+                <xsl:text>&#xA;</xsl:text>
+            </xsl:when>
+        </xsl:choose>        
+    </xsl:template>
+    
     <xsl:template match="img" mode="Manufacturer"> <!-- обработка тегов со ссылками на логотипы -->
         <xsl:variable name="uriimg">
             <xsl:value-of select="concat($logo-folder, substring-before(@src, '.gif'), '.eps')"/>
@@ -96,11 +108,14 @@
     
     <xsl:template match="table" mode="Manufacturer">
         <xsl:variable name="BodyRowCount" select="count(descendant::tr)"/>
-        <xsl:variable name="maxcol_row"> <!-- блок, осуществляющий подсчет максимального количества столбцов в таблице методом перебора строк осуществляется вызов шаблона с рекурсивным вызовом -->
-            <xsl:call-template name="Table_calc_columns"/>
-        </xsl:variable>
-        <xsl:variable name="colcount_inmaxcol_row"
-            select="count(descendant::tr[position() = $maxcol_row]/td)"/>
+        <xsl:variable name="td-number-in-first-row"
+            select="count(descendant::tr[position()=1]/td)"/>
+        <xsl:variable name="table-count-col">
+            <xsl:call-template name="Table_calc_columns">
+                <xsl:with-param name="cell-pos" select="1"/>
+                <xsl:with-param name="count-col" select="$td-number-in-first-row"/>
+            </xsl:call-template>
+        </xsl:variable>  
         <xsl:variable name="arrColWidth" as="xs:integer*"> <!-- В зависимости от количества столбцов формируются переменные-последовательности, состоящие из величин ширины столбцов -->
             <xsl:choose>
                 <xsl:when test="count(descendant::td)=2">
@@ -137,7 +152,7 @@
         <Table_padding xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="Table_padding"/>
         <xsl:text>&#xA;</xsl:text>                    
         <!-- До и после таблиц вставляются абзацы-отбивки, иначе сложный макет ломается: внесение исправлений в текст трехколонника влечет съезжание таблиц, крепко сцеленных друг с другом (если абзацы table идут друг за другом) -->                    
-        <table xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="table"><Table aid:table="table" aid:trows="{$BodyRowCount}" aid:tcols="{$colcount_inmaxcol_row}" aid5:tablestyle="{$table-style}">
+        <table xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" aid:pstyle="table"><Table aid:table="table" aid:trows="{$BodyRowCount}" aid:tcols="{$table-count-col}" aid5:tablestyle="{$table-style}">
             <xsl:text>&#xA;</xsl:text>
             <xsl:for-each select="descendant::tr">
                 <xsl:choose>
@@ -169,7 +184,7 @@
                                 </xsl:choose>                                            
                             </xsl:variable>
                             <Cell aid:table="cell" aid:theader="" aid:crows="{$cell-row-span}" aid:ccols="{$cell-col-span}" aid:ccolwidth="{$columnWidth}" aid5:cellstyle="{$cell-style}">
-                                <xsl:apply-templates/>
+                                <xsl:apply-templates select="*" mode="Manufacturer"/>
                             </Cell>
                             <xsl:text>&#xA;</xsl:text>
                         </xsl:for-each>
@@ -202,7 +217,7 @@
                                 </xsl:choose>                                        
                             </xsl:variable>
                             <Cell aid:table="cell" aid:crows="{$cell-row-span}" aid:ccols="{$cell-col-span}" aid:ccolwidth="{$columnWidth}">
-                                <xsl:apply-templates/>
+                                <xsl:apply-templates select="*" mode="Manufacturer"/>
                             </Cell>
                             <xsl:text>&#xA;</xsl:text>
                         </xsl:for-each>
@@ -582,7 +597,7 @@
     
     <xsl:template match="br" mode="character-style-range">
         <xsl:choose>
-            <xsl:when test="count(following-sibling::*) &gt; 0"> <!-- только если после br еще есть текст или другие элементы, простирающиеся до закрытого тега p, добавляется перевод строки. А то в базе есть случаи, когда br стоит перед закрытым p-->
+            <xsl:when test="count(following-sibling::text()) &gt; 0"> <!-- только если после br еще есть текст или другие элементы, простирающиеся до закрытого тега p, добавляется перевод строки. А то в базе есть случаи, когда br стоит перед закрытым p-->
                 <xsl:text>&#xA;</xsl:text>                
             </xsl:when>
         </xsl:choose>
