@@ -20,7 +20,7 @@ function Main() {
         const INDEX_HorizontalPosition = 190.5;        
         const INDEX_LETTER_WIDTH = 20;
         const INDEX_LETTER_HEIGHT = 7;
-        const PATH_TO_FILES_WITH_INDEX_LETTERS = "F:\\!RLS\\CSC\\Encik\\Plashka_color_EPS\\";
+        const PATH_TO_FILES_WITH_INDEX_LETTERS = "C:\\enc2021\\Plashka_color_EPS\\";
         const EXTENSION_OF_FILES_WITH_INDEX_LETTERS = ".eps"; // расширение графических файлов в папке
         var foundHeadingCapilals = [];
         var indexGeometricBounds = [];
@@ -35,11 +35,12 @@ function Main() {
 // чтобы сразу исключить проверку первых букв в заголовке описания на кирилличность, организуем GREP-поиск с указанным ниже шаблоном по указанному стилю абзаца. Абзац COLONT_Opis специально организован в макете, чтобы избежать орагнизации колонтитулов по двум различным абзацам, так же и удобнее организовать поиск по одному абзацу, который дублирует содержимое капк абзацев OPIS_Largetone, так и Opis_DV_Opis
         app.findGrepPreferences.appliedParagraphStyle = myDoc.paragraphStyles.itemByName("COLONT_Opis");
         app.findGrepPreferences.findWhat = "[А-Я].+";  //шаблон Grep-поиска
-        for (var i=0; i < myDoc.pages.length; i+=2) {
+        var firstSpreadCompletenessIndicator = (myDoc.documentPreferences.startPageNumber % 2 == 0) ? 1 : 0; // цикл начинается с 1, т.е. со второй страницы первого разворота - это бывает в случае, когда разворот полный, т.е. первая страница четная; в противном случае цикл начинатеся с нуля
+        for (var i=firstSpreadCompletenessIndicator; i < myDoc.pages.length; i+=2) {
             app.activeWindow.activePage = myDoc.pages[i]; //в цикле перебираются правые страницы разворотов, в силу особенностей нумерации массивов в массиве они обозначаются четными номерами 
             foundHeadingCapilals = (i == 0) ? myDoc.pages[i].textFrames[0].findGrep() : myDoc.pages[i-1].textFrames[0].findGrep().concat(myDoc.pages[i].textFrames[0].findGrep()); //для нулевого разворота массив  формируется из найденных абзацев первой полосы, для остальных разворотов из найденных абзацев обоих полос разворота
             for (var ns = foundHeadingCapilals.length - 1; ns >= 0; ns-- ) {
-                foundIndexLetter = foundHeadingCapilals[ns].contents.charAt(0); //первый символ проверяемого абзаца
+                foundIndexLetter = foundHeadingCapilals[ns].contents.charAt(0).toLowerCase(); //первый символ проверяемого абзаца
                 if (foundIndexLetter != currentIndexLetter) { //сравнивается с текущим индексом
                     currentIndexLetter = foundIndexLetter;   // текущий индекс получает новое значение
                     indexVerticalPosition +=INDEX_LETTER_HEIGHT;  // координата по Y графического указателя получает приращение, равное высоте граф. указателя(плашки) INDEX_LETTER_HEIGHT
