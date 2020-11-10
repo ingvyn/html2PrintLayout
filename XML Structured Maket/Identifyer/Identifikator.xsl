@@ -14,22 +14,20 @@
     <xsl:template match="Graphics">
         <Ident>
             <xsl:text>&#xA;</xsl:text>
+            <xsl:if test="@name">
+                <anchorCR name="{@name}"/>
+                <xsl:text>&#xA;</xsl:text>                
+            </xsl:if>            
             <xsl:copy> <!-- в выходной файл переносится тег Graphics -->
                 <xsl:attribute name="href"> <!-- атрибуту href тега присваивается имя файла eps с путем -->
                     <xsl:value-of select="concat($ident-folder, text())"/>
                 </xsl:attribute>            
             </xsl:copy>
             <xsl:text>&#xA;</xsl:text>
-            <xsl:choose> <!-- по наличию в теге Graphics атрибутa href формируется дочерний тег с соответствующим атрибутом -->
-                <xsl:when test="@href">
-                    <crossRef href="{@href}">c. 0000</crossRef>
-                    <xsl:text>&#xA;</xsl:text>
-                </xsl:when>
-                <xsl:when test="@name">
-                    <anchorCR name="{@name}"/>
-                    <xsl:text>&#xA;</xsl:text>
-                </xsl:when>                
-            </xsl:choose>
-        </Ident>
+            <xsl:if test="@href"> <!-- по наличию в теге Graphics атрибутa href формируется дочерний тег с соответствующим атрибутом -->
+                <crossRef href="{@href}">c. 0000</crossRef>
+                <xsl:text>&#xA;</xsl:text>
+            </xsl:if>
+      </Ident>
     </xsl:template>
 </xsl:stylesheet>
