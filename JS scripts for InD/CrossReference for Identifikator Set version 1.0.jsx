@@ -12,35 +12,49 @@
 app.doScript(Main, undefined, undefined, UndoModes.ENTIRE_SCRIPT, 'Run Script');
 
 function Main() {
-  //установка переменной-ссылки на документ, содержащий раздел "Идентификатор л.с., БАДов, мед. изд."
-  var doc1 = app.documents.itemByName('Identifikator.indd');
   //установка переменной-ссылки на документ, содержащий одноименный раздел "Описания л.с., БАДов, мед. изд." (раздел 1.5) главы "Описания л.с., БАДов, мед. изд."
-  var doc2 = app.documents.itemByName('Glava_1_5.indd');
+  var doc0 = app.documents.itemByName('Glava_1_5.indd');
+
+    //установка переменной-ссылки на документ, содержащий раздел "Идентификатор л.с., БАДов, мед. изд."
+  var doc1 = app.documents.itemByName('Glava_1_7.indd');
+  var doc2 = app.documents.itemByName('Identifikator.indd');  
 
   try {
-    if (!(doc1.name && doc2.name)) {
+    if (!(doc0.name&&doc1.name && doc2.name)) {
       throw new ReferenceError('Ошибка чтения данных');
     }
   } catch (e) {
     if (e.name == 'ReferenceError') {
       alert(
-        'Для работы скрипта необходимо открыть документы Identifikator.indd, Glava_1_5.indd. Откройте их и запустите скрипт снова'
+        'Для работы скрипта необходимо открыть документы Glava_1_7.indd, Identifikator.indd, Glava_1_5.indd. Откройте их и запустите скрипт снова'
       );
       return;
     } else {
       throw e;
     }
   }
-  //объявление объекта с ключами, взятыми из имен элементов массива текстовых привязок документа doc2, для осуществления быстрого поиска по именам
+  //объявление объекта с ключами, взятыми из имен элементов массива текстовых привязок документа doc3, для осуществления быстрого поиска по именам
   var storeDrugDescriptionDestinationNames = allDestinationNamesForDocument(
+    doc0
+  );
+  
+  var storeIdentifikatorDestinationNames = allDestinationNamesForDocument(
     doc2
   );
 
   //установка номеров страниц перекрестных ссылок в "Идентификаторе"
   setSourcesForDocument(
+    doc2,
+    doc0,
+    storeDrugDescriptionDestinationNames,
+    'descendant::crossRef[@href]'
+  );
+
+  //установка номеров страниц перекрестных ссылок в "указателе производителей для Идентификатора"
+  setSourcesForDocument(
     doc1,
     doc2,
-    storeDrugDescriptionDestinationNames,
+    storeIdentifikatorDestinationNames,
     'descendant::crossRef[@href]'
   );
 
@@ -68,19 +82,20 @@ function Main() {
     var xmlAnchorRefArr = xmlRoot.evaluateXPathExpression(
       'descendant::anchorCR[@name]'
     );
-    var iteratedNodesValues = {};
     var mySetDest = doc.hyperlinkTextDestinations;
     var currentName;
     var currentDest;
     for (var i = 0; i < xmlAnchorRefArr.length; i++) {
       //перебираем все узлы, имеющие элементы anchorCR
         currentName = xmlAnchorRefArr[i].xmlAttributes[0].value; //берется значение единственного атрибута name
-        if (!(currentName in iteratedNodesValues)) { //только если такое же значение еще не обрабатывалось
-            workXmlElement = xmlAnchorRefArr[i].parent; //переходим к родителю элемента
+        workXmlElement = xmlAnchorRefArr[i].parent; //переходим к родителю элемента
+        try {
             currentDest = mySetDest.add(workXmlElement.texts[0]); //текст элемента добавляется в массив-свойство активного документа, состоящий из текстов-привязок
             currentDest.name = currentName; //свойству-имени текста привязки  присваивается присваивается уникальное имя, в данном случае значение атрибутата name элемента anchorCR
-        }
-        iteratedNodesValues[currentName] = i; // значение сохраняется для последующей проверки на уникальность
+            }
+        catch (e) {
+            continue;
+            }
     }
   }
 
