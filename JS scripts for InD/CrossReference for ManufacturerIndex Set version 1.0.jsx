@@ -89,19 +89,20 @@ function Main() {
     var xmlAnchorRefArr = xmlRoot.evaluateXPathExpression(
       'descendant::anchorCR[@name]'
     );
-    var iteratedNodesValues = {};
     var mySetDest = doc.hyperlinkTextDestinations;
     var currentName;
     var currentDest;
     for (var i = 0; i < xmlAnchorRefArr.length; i++) {
       //перебираем все узлы, имеющие элементы anchorCR
         currentName = xmlAnchorRefArr[i].xmlAttributes[0].value; //берется значение единственного атрибута name
-        if (!(currentName in iteratedNodesValues)) { //только если такое же значение еще не обрабатывалось
-            workXmlElement = xmlAnchorRefArr[i].parent; //переходим к родителю элемента
+        workXmlElement = xmlAnchorRefArr[i].parent; //переходим к родителю элемента
+        try {
             currentDest = mySetDest.add(workXmlElement.texts[0]); //текст элемента добавляется в массив-свойство активного документа, состоящий из текстов-привязок
             currentDest.name = currentName; //свойству-имени текста привязки  присваивается присваивается уникальное имя, в данном случае значение атрибутата name элемента anchorCR
-        }
-        iteratedNodesValues[currentName] = i; // значение сохраняется для последующей проверки на уникальность
+            }
+        catch (e) {
+            continue;
+            }
     }
   }
 
